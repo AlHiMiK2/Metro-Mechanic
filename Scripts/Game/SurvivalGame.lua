@@ -232,6 +232,8 @@ function SurvivalGame.bindChatCommands(self)
 		sm.game.bindChatCommand("/baguette", {}, "cl_onChatCommand", "Give 1 revival baguette")
 		sm.game.bindChatCommand("/keycard", {}, "cl_onChatCommand", "Give 1 keycard")
 		sm.game.bindChatCommand("/powercore", {}, "cl_onChatCommand", "Give 1 powercore")
+		sm.game.bindChatCommand( "/encrypt", {}, "cl_onChatCommand", "Restrict interactions in all warehouses" )
+		sm.game.bindChatCommand( "/decrypt", {}, "cl_onChatCommand", "Unrestrict interactions in all warehouses" )
 		sm.game.bindChatCommand("/components", { { "int", "quantity", true } }, "cl_onChatCommand",
 			"Give <quantity> components (default 10)")
 		sm.game.bindChatCommand("/glowsticks", { { "int", "quantity", true } }, "cl_onChatCommand",
@@ -256,6 +258,7 @@ function SurvivalGame.bindChatCommands(self)
 		sm.game.bindChatCommand("/cleardebug", {}, "cl_onChatCommand", "Clear debug draw objects")
 		sm.game.bindChatCommand("/import", { { "string", "name", false } }, "cl_onChatCommand",
 			"Imports blueprint $SURVIVAL_DATA/LocalBlueprints/<name>.blueprint")
+		sm.game.bindChatCommand( "/export", { { "string", "name", false } }, "cl_onChatCommand", "Exports blueprint $SURVIVAL_DATA/LocalBlueprints/<name>.blueprint" )
 		sm.game.bindChatCommand("/starterkit", {}, "cl_onChatCommand", "Spawn a starter kit")
 		sm.game.bindChatCommand("/mechanicstartkit", {}, "cl_onChatCommand",
 			"Spawn a starter kit for starting at mechanic station")
@@ -435,6 +438,10 @@ function SurvivalGame.cl_onChatCommand(self, params)
 	elseif params[1] == "/gatling" then
 		self.network:sendToServer("sv_giveItem",
 			{ player = sm.localPlayer.getPlayer(), item = tool_gatling, quantity = 1 })
+	elseif params[1] == "/encrypt" then
+		self.network:sendToServer( "sv_enableRestrictions", true )
+	elseif params[1] == "/decrypt" then
+		self.network:sendToServer( "sv_enableRestrictions", false )
 	elseif params[1] == "/shotgun" then
 		self.network:sendToServer("sv_giveItem",
 			{ player = sm.localPlayer.getPlayer(), item = tool_shotgun, quantity = 1 })
@@ -535,6 +542,15 @@ function SurvivalGame.cl_onChatCommand(self, params)
 		end
 	elseif params[1] == "/cleardebug" then
 		sm.debugDraw.clear()
+	elseif params[1] == "/export" then
+		local rayCastValid, rayCastResult = sm.localPlayer.getRaycast( 100 )
+		if rayCastValid and rayCastResult.type == "body" then
+			local importParams = {
+				name = params[2],
+				body = rayCastResult:getBody()
+			}
+			self.network:sendToServer( "sv_exportCreation", importParams )
+		end
 	elseif params[1] == "/import" then
 		local rayCastValid, rayCastResult = sm.localPlayer.getRaycast(100)
 		if rayCastValid then
@@ -637,6 +653,11 @@ function SurvivalGame.sv_ambush(self, params)
 	end
 end
 
+function SurvivalGame.sv_enableRestrictions( self, state )
+	sm.game.setEnableRestrictions( state )
+	self.network:sendToClients( "client_showMessage", ( state and "Restricted" or "Unrestricted"  ) )
+end
+
 function SurvivalGame.sv_teleportplayer(self, data)
 	local progressionOffset = (CELL_MAX_Y - CELL_MIN_Y) * self.sv.progress
 
@@ -705,6 +726,11 @@ end
 function SurvivalGame.sv_importCreation(self, params)
 	sm.creation.importFromFile(params.world, "$SURVIVAL_DATA/LocalBlueprints/" .. params.name .. ".blueprint",
 		params.position)
+end
+
+function SurvivalGame.sv_exportCreation( self, params )
+	local obj = sm.json.parseJsonString( sm.creation.exportToString( params.body ) )
+	sm.json.save( obj, "$CONTENT_DATA/Blueprints/"..params.name..".blueprint" )
 end
 
 function SurvivalGame.sv_onChatCommand(self, params, player)
