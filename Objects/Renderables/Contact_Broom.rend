@@ -1,0 +1,17 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/Broom.obj",
+         "subMeshList" : [
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/char_spudgun_stock_broom_dif.tga",
+                  "$CONTENT_DATA/Objects/Textures/char_spudgun_stock_broom_asg.tga",
+                  "$CONTENT_DATA/Objects/Textures/char_spudgun_stock_broom_nor.tga"
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,55 @@
+{
+   "partList" : [
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 5,
+            "z" : 1
+         },
+         "color" : "df7f00",
+         "name" : "Contact Rail",
+         "physicsMaterial" : "Metal",
+         "ratings" : {
+            "buoyancy" : 0,
+            "density" : 5,
+            "durability" : 10,
+            "friction" : 0
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Contact_Rail.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : false,
+            "destructable" : false,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : true,
+            "usable" : false
+         },
+         "rotationSet" : "StaticYZX",
+         "uuid" : "f0caa8dc-889a-4aba-9cc1-0bf01826a15a"
+      },
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 1,
+            "z" : 1
+         },
+         "name" : "Contact Broom",
+         "physicsMaterial" : "Mechanical",
+         "ratings" : {
+            "buoyancy" : 0,
+            "density" : 5,
+            "durability" : 5,
+            "friction" : 1
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Contact_Broom.rend",
+         "rotationSet" : "PropNegY",
+         "scripted" : {
+            "classname" : "Broom",
+            "filename" : "$CONTENT_DATA/Scripts/Game/Interactables/Broom.lua"
+         },
+         "uuid" : "8305013f-f609-4925-9024-301d128c3211"
+      }
+   ]
+}
