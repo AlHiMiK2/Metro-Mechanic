@@ -1,7 +1,7 @@
 {
 	"assetListRenderable": [
 		{
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailShort_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailShort_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -14,7 +14,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailShort.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailShort.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -22,9 +22,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -34,7 +34,7 @@
             "uuid": "d2a0abdd-5943-4c39-aa8f-bcca041afe0f"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail4xLine_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRail4xLine_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -47,7 +47,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail4xLine.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRail4xLine.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -55,9 +55,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -67,7 +67,7 @@
             "uuid": "7938b06e-7923-4fbe-a4ff-5cdcbf2157ad"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail8xLine_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRail8xLine_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -80,7 +80,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail8xLine.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRail8xLine.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -88,9 +88,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -100,7 +100,7 @@
             "uuid": "aece7882-b891-47ff-8d25-48dcb8c7d4f7"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailLine_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailLine_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -113,7 +113,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailLine.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailLine.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -121,9 +121,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -133,7 +133,7 @@
             "uuid": "8b5a288e-ec43-4981-9014-8eaf4262e6d7"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailRamp45_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailRamp45_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -146,7 +146,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailRamp45.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailRamp45.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -154,9 +154,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -166,7 +166,7 @@
             "uuid": "78e4be96-c4cd-4d17-95b7-d48aaa69f9f4"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45BigRamp_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRail45BigRamp_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -179,7 +179,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45BigRamp.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRail45BigRamp.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -187,9 +187,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -199,7 +199,7 @@
             "uuid": "767c1b74-10f2-456d-9e26-684ca1df81a5"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45Curve_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRail45Curve_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -212,7 +212,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45Curve.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRail45Curve.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -220,9 +220,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -232,7 +232,7 @@
             "uuid": "24701057-3708-4023-8c08-056f8bdcf293"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45BigCurve_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRail45BigCurve_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -245,7 +245,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45BigCurve.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRail45BigCurve.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -253,9 +253,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -265,7 +265,7 @@
             "uuid": "98f98af7-2ebf-4094-9e67-8d9c115facb6"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailLoop_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailLoop_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -278,7 +278,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailLoop.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailLoop.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -286,9 +286,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -298,7 +298,7 @@
             "uuid": "6ab78aa3-464e-4eb8-babd-ed84b05098eb"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailBigLoop_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailBigLoop_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -311,7 +311,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailBigLoop.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailBigLoop.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -319,9 +319,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -331,7 +331,7 @@
             "uuid": "e262dc4f-068c-443d-bf8d-f8342c1c50c7"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailTwist_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailTwist_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -344,7 +344,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailTwist.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailTwist.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -352,9 +352,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -364,7 +364,7 @@
             "uuid": "7859d2c6-d9cd-4958-89f7-fdbfe90b5443"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailTwistRight_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/RollerCoasterRailTwistRight_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -377,7 +377,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailTwistRight.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/RollerCoasterRailTwistRight.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -385,9 +385,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -397,7 +397,7 @@
             "uuid": "1960c531-6f55-48ee-84db-3b8e47eef7c9"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/MonoStraight4x_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/MonoStraight4x_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -410,7 +410,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoStraight4x.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/MonoStraight4x.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -418,9 +418,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -430,7 +430,7 @@
             "uuid": "6621d35f-7af6-488f-bba4-97ac0c53d969"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/MonoStraight_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/MonoStraight_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -443,7 +443,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoStraight.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/MonoStraight.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -451,9 +451,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]
@@ -463,7 +463,7 @@
             "uuid": "e65fa423-19d7-40fc-b6c3-625214a674a3"
         },
         {
-            "col": "$MOD_DATA/Collision/Rollercoaster/MonoRail45Flat_col.obj",
+            "col": "$CONTENT_DATA/AssetPacks/1331879173/Collision/Rollercoaster/MonoRail45Flat_col.obj",
             "defaultColors": {
                 "Rail": "685e54"
             },
@@ -476,7 +476,7 @@
                 "lodList": [
                     {
                         "maxViewDistance": 4500,
-                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoRail45Flat.obj",
+                        "mesh": "$CONTENT_DATA/AssetPacks/1331879173/Mesh/RollerCoaster/MonoRail45Flat.obj",
                         "subMeshList": [
                             {
                                 "custom": {
@@ -484,9 +484,9 @@
                                 },
                                 "material": "DifAsgNor",
                                 "textureList": [
-                                    "$MOD_DATA/Textures/no_dif.png",
-                                    "$MOD_DATA/Textures/Plates_asg.png",
-                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/no_dif.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/Plates_asg.png",
+                                    "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
                                 ]
                             }
                         ]

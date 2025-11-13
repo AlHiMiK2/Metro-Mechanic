@@ -11,26 +11,6 @@
       {
          "assetSet" : "$CONTENT_DATA/AssetPacks/1331879173/Database/AssetSets/Mixed.json",
          "category" : "LP - Mixed"
-      },
-      {
-         "assetSet" : "$CONTENT_DATA/AssetPacks/2632353072/Database/AssetSets/railtrack.json",
-         "category" : "RailTrack"
-      },
-      {
-         "assetSet" : "$CONTENT_DATA/AssetPacks/2632353072/Database/AssetSets/curves.json",
-         "category" : "RailTrack (Curves)"
-      },
-      {
-         "assetSet" : "$CONTENT_DATA/AssetPacks/2632353072/Database/AssetSets/curve_junctions.json",
-         "category" : "RailTrack (Curve Junctions)"
-      },
-      {
-         "assetSet" : "$CONTENT_DATA/AssetPacks/2632353072/Database/AssetSets/turntable.json",
-         "category" : "RailTrack (Turntable)"
-      },
-      {
-         "assetSet" : "$CONTENT_DATA/AssetPacks/2632353072/Database/AssetSets/deprecated.json",
-         "category" : "RailTrack (Deprecated)"
       }
    ]
 }
