@@ -1,0 +1,589 @@
+{
+	"assetListRenderable": [
+		{
+            "col": "$MOD_DATA/Collision/TrainTracks/RailLineShort_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailLineShort.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "dee2240f-6239-48a4-b751-2d8692ef125b"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailLine_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailLine.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "e3dfef33-2656-411a-8563-ce197fe984cd"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailCurveH90_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail Tight 90° Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailCurveH90.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "9e874957-a13e-4f33-b2b8-62a434db6e92"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailCurveH45Big_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail Wide 45° Right Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailCurveH45Big.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "1fc615ab-30af-4583-84b7-bb89f48f071e"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailCurveH45BigL_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail Wide 45° Left Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailCurveH45BigL.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "80f894b6-24e1-41ad-a4ca-0817f9bca3cc"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSlopeUp10_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail 10.5° Slope Up",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSlopeUp10.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "f2135137-9230-4f71-bba3-7e2374b10a1d"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSlopeDown10_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Rail 10.5° Slope Down",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSlopeDown10.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "17abd4b5-0d2c-4897-9c16-befeefc02394"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSwitchY_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Y Switch",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSwitchY.obj",
+                        "subMeshList": [
+							{
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }                            
+                        ]
+                    }
+                ]
+            },
+            "uuid": "81bdeb77-b6c7-4e13-86c3-06e425c21a92"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSwitchRight_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Right Switch",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSwitchRight.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "f9df656d-7598-4155-bdde-dc491fe471c9"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSwitchRightEnding_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Right Switch Ending",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSwitchRightEnding.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "e6830158-6075-44fb-a693-4b16d9a88d32"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSwitchLeft_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Left Switch",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSwitchLeft.obj",
+                        "subMeshList": [
+                        	{
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "839dd4c9-0dfc-43ee-8d2a-1443adef127b"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailSwitchLeftEnding_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Left Switch Ending",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailSwitchLeftEnding.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "6a38d25c-be9e-416d-bb45-b7399c669d06"
+        },
+        {
+            "col": "$MOD_DATA/Collision/TrainTracks/RailX_col.obj",
+            "defaultColors": {
+                "Concrete": "959595",
+                "Rail": "685e54"
+            },
+            "name": "Intersection",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/TrainTracks/RailX.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Concrete"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/blk_concrete01_dif.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_asg.tga",
+                                    "$MOD_DATA/Textures/blk_concrete01_nor.tga"
+                                ]
+                            },
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "b35ca347-03f9-4343-a591-6e09fd461085"
+        }
+	]
+}

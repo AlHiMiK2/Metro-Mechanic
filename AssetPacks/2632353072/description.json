@@ -1,0 +1,10 @@
+{
+   "allow_add_mods" : true,
+   "custom_icons" : true,
+   "description" : "Terrain assets for use in Scrap Mechanic -> Tile Builder\r\n\r\nRail, Sleeper, 1/2 Straight, Straight, Radius Curves 1,2 & 3 (0-90 deg)\r\n\r\nLeft & Right Hand:\r\nMain Line Junction, Rail Yard Junction, Diamond Crossing, Diagonal, Curve\r\n\r\n--------\r\n45 degree Radius Curves (0-45 deg and 45-90 deg):\r\nRadius 1,2 & 3, \r\nRadius 1 to Radius 2 (CW and CCW)\r\nRadius 2 to Radius 3 (CW and CCW)\r\nRadius 1 Curved Junctions\r\n\r\nDiamond Junction (left & right rails)\r\n",
+   "fileId" : 2632353072,
+   "localId" : "b060c3a3-a187-4235-8ac2-b32e059b2068",
+   "name" : "Rail Track (7u Gauge)",
+   "type" : "Terrain Assets",
+   "version" : 1
+}

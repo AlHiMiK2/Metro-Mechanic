@@ -1,0 +1,499 @@
+{
+	"assetListRenderable": [
+		{
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailShort_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight 1x",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailShort.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "d2a0abdd-5943-4c39-aa8f-bcca041afe0f"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail4xLine_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight 4x",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail4xLine.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "7938b06e-7923-4fbe-a4ff-5cdcbf2157ad"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail8xLine_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight 8x",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail8xLine.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "aece7882-b891-47ff-8d25-48dcb8c7d4f7"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailLine_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailLine.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "8b5a288e-ec43-4981-9014-8eaf4262e6d7"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailRamp45_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Ramp",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailRamp45.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "78e4be96-c4cd-4d17-95b7-d48aaa69f9f4"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45BigRamp_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Big Ramp",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45BigRamp.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "767c1b74-10f2-456d-9e26-684ca1df81a5"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45Curve_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45Curve.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "24701057-3708-4023-8c08-056f8bdcf293"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRail45BigCurve_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Big Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRail45BigCurve.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "98f98af7-2ebf-4094-9e67-8d9c115facb6"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailLoop_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Small Loop",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailLoop.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "6ab78aa3-464e-4eb8-babd-ed84b05098eb"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailBigLoop_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Big Loop",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailBigLoop.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "e262dc4f-068c-443d-bf8d-f8342c1c50c7"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailTwist_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Twist Left",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailTwist.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "7859d2c6-d9cd-4958-89f7-fdbfe90b5443"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/RollerCoasterRailTwistRight_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Twist Right",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/RollerCoasterRailTwistRight.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "1960c531-6f55-48ee-84db-3b8e47eef7c9"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/MonoStraight4x_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight Mono Rail 4x",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoStraight4x.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "6621d35f-7af6-488f-bba4-97ac0c53d969"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/MonoStraight_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "Straight Mono Rail",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoStraight.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "e65fa423-19d7-40fc-b6c3-625214a674a3"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Rollercoaster/MonoRail45Flat_col.obj",
+            "defaultColors": {
+                "Rail": "685e54"
+            },
+            "name": "45° Mono Rail Curve",
+            "physics": {
+                "mass": 10000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/RollerCoaster/MonoRail45Flat.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Rail"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "20a6a4f1-dd47-4a04-b0a3-217bfa7eea53"
+        }
+	]
+}

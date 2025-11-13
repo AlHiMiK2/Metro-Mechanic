@@ -1,0 +1,267 @@
+{
+  "blockList": [
+    {
+      "uuid": "f5ceb7e3-5576-41d2-82d2-29860cf6e20e",
+      "name": "blk_crackedconcrete",
+      "dif": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_dif.tga",
+      "asg": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_asg.tga",
+      "nor": "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_crackedconcrete01_nor.tga",
+      "tiling": 8,
+      "color": "8d8f89",
+      "physicsMaterial": "Rock",
+      "ratings": {
+        "density": 6,
+        "durability": 3,
+        "friction": 6,
+        "buoyancy": 4
+      },
+      "flammable": false
+    }
+  ],
+  "partList": [
+    {
+      "uuid": "5eb8975b-0acf-43a7-ab4e-62ce661c0df7",
+      "name": "obj_interactive_comfybed",
+      "renderable": "$SURVIVAL_DATA/Objects/Renderable/interactive/obj_interactive_comfybed.rend",
+      "color": "3e9ffe",
+      "box": {
+        "x": 4,
+        "y": 1,
+        "z": 7
+      },
+      "scripted": {
+        "filename": "$CONTENT_DATA/Scripts/Game/Interactables/Bed.lua",
+        "classname": "Bed",
+        "data": {},
+        "seat": {
+          "bones": [
+            {
+              "name": "root_jnt",
+              "offset": {
+                "x": 0,
+                "y": 1,
+                "z": 0.3
+              }
+            },
+            {
+              "name": "LeftForeArm",
+              "offset": {
+                "x": 1.5,
+                "y": 1.1,
+                "z": 1.1
+              },
+              "freeRotation": true
+            },
+            {
+              "name": "RightForeArm",
+              "offset": {
+                "x": -1.5,
+                "y": 1.1,
+                "z": 1.1
+              },
+              "freeRotation": true
+            }
+          ],
+          "ragdollFile": "$SURVIVAL_DATA/Character/bed_ragdoll.json",
+          "enterAudio": "Seat seated",
+          "exitAudio": "Seat unseated"
+        }
+      },
+      "rotationSet": "PropFullMinusNegY",
+      "sticky": "-Z+Z-Y-X+X",
+      "physicsMaterial": "Metal",
+      "ratings": {
+        "density": 3,
+        "durability": 3,
+        "friction": 4,
+        "buoyancy": 6
+      },
+      "flammable": true,
+      "restrictions": {
+        "usable": true
+      }
+    },
+    {
+      "uuid": "8caea17a-39f3-4750-8012-a8e82b0b061b",
+      "name": "Crap Loot Box",
+      "renderable": {
+        "lodList": [
+          {
+            "subMeshList": [
+              {
+                "textureList": [
+                  "$GAME_DATA/Objects/Textures/containers/obj_containers_woodbox_dif.tga",
+                  "$GAME_DATA/Objects/Textures/containers/obj_containers_woodbox_asg.tga",
+                  "$GAME_DATA/Objects/Textures/containers/obj_containers_woodbox_nor.tga"
+                ],
+                "material": "DifAsgNor"
+              }
+            ],
+            "mesh": "$CONTENT_DATA/Objects/Mesh/CrapCrate.fbx"
+          }
+        ]
+      },
+      "color": "cb8d43",
+      "box": {
+        "x": 2,
+        "y": 2,
+        "z": 2
+      },
+      "rotationSet": "StaticYmZmXm",
+      "scripted": {
+        "classname": "CrapCrate",
+        "filename": "$CONTENT_DATA/Scripts/Game/Interactables/CrapCrate.lua"
+      },
+      "physicsMaterial": "Wood",
+      "ratings": {
+        "density": 4,
+        "durability": 2,
+        "friction": 6,
+        "buoyancy": 5
+      },
+      "flammable": true
+    },
+    {
+      "box": {
+        "x": 2,
+        "y": 2,
+        "z": 1
+      },
+      "color": "c36512",
+      "flammable": false,
+      "name": "obj_customobject_elevatorcallbutton",
+      "physicsMaterial": "Metal",
+      "ratings": {
+        "buoyancy": 5,
+        "density": 5,
+        "durability": 10,
+        "friction": 5
+      },
+      "renderable": {
+        "lodList": [
+          {
+            "mesh": "$SURVIVAL_DATA/Objects/Mesh/survivalobject/obj_survivalobjects_elevatorcallbutton.fbx",
+            "pose0": "$SURVIVAL_DATA/Objects/Mesh/survivalobject/obj_survivalobjects_elevatorcallbutton_pose0.fbx",
+            "subMeshMap": {
+              "callbutton_mat": {
+                "material": "PoseAnimDifAsgNor",
+                "textureList": [
+                  "$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobjects_elevatorcallbutton_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobjects_elevatorcallbutton_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobjects_elevatorcallbutton_nor.tga"
+                ]
+              },
+              "callbutton_screen": {
+                "custom": {
+                  "uv0": {
+                    "u": 0.25,
+                    "v": 0.25
+                  }
+                },
+                "material": "UVAnimDifAsg",
+                "textureList": [
+                  "$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobjects_elevatorcallbutton_screen_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/survivalobject/obj_survivalobjects_elevatorcallbutton_screen_asg.tga",
+                  ""
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "restrictions": {
+        "buildable": false,
+        "connectable": false,
+        "convertibleToDynamic": false,
+        "destructable": false,
+        "erasable": false,
+        "liftable": false,
+        "paintable": false,
+        "usable": true
+      },
+      "rotationSet": "PropZ",
+      "scripted": {
+        "classname": "ElevatorCallButton",
+        "filename": "$CONTENT_DATA/Scripts/Game/Interactables/ElevatorCallButton.lua"
+      },
+      "sticky": "-Z+Y-Y+X-X",
+      "uuid": "c35f30e1-148d-43a8-9fb0-a9a4a763ed3f"
+    },
+    {
+      "uuid": "71139e38-4300-4253-9ab1-4ed343ce6b82",
+      "name": "obj_customobject_elevator_end",
+      "renderable": {
+        "lodList": [
+          {}
+        ]
+      },
+      "color": "79859c",
+      "box": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "scripted": {
+        "filename": "$CONTENT_DATA/Scripts/Game/Interactables/ElevatorEnd.lua",
+        "classname": "ElevatorEnd"
+      },
+      "rotationSet": "PropY",
+      "physicsMaterial": "Metal",
+      "ratings": {
+        "density": 5,
+        "durability": 10,
+        "friction": 5,
+        "buoyancy": 5
+      },
+      "flammable": false,
+      "restrictions": {
+        "destructable": false,
+        "erasable": false,
+        "buildable": false,
+        "usable": false,
+        "connectable": false,
+        "liftable": false,
+        "convertibleToDynamic": false,
+        "paintable": false
+      }
+    },
+    {
+      "uuid": "12d1ae23-9abe-4a49-b793-dded34db39e2",
+      "name": "obj_customobject_elevator_start",
+      "renderable": {
+        "lodList": [
+          {}
+        ]
+      },
+      "color": "79859c",
+      "box": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "scripted": {
+        "filename": "$CONTENT_DATA/Scripts/Game/Interactables/ElevatorStart.lua",
+        "classname": "ElevatorStart"
+      },
+      "rotationSet": "PropY",
+      "physicsMaterial": "Metal",
+      "ratings": {
+        "density": 5,
+        "durability": 10,
+        "friction": 5,
+        "buoyancy": 5
+      },
+      "flammable": false,
+      "restrictions": {
+        "destructable": false,
+        "erasable": false,
+        "buildable": false,
+        "usable": false,
+        "connectable": false,
+        "liftable": false,
+        "convertibleToDynamic": false,
+        "paintable": false
+      }
+    }
+  ]
+}

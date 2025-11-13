@@ -1,0 +1,1091 @@
+{
+	"assetListRenderable": [
+        {
+            "col": "$MOD_DATA/Collision/Mixed/BigPipe_col.obj",
+            "defaultColors": {
+                "Pipe": "262626"
+            },
+            "name": "Big Pipe",
+            "physics": {
+                "mass": 20000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/BigPipe.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Pipe"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/env_manmade_tank_dif.tga",
+                                    "$MOD_DATA/Textures/env_manmade_tank_asg.tga",
+                                    "$MOD_DATA/Textures/env_manmade_tank_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "13cdc8c8-6774-4168-a076-43555adfe2e1"
+        },
+        {
+            "col": "$MOD_DATA/Mesh/Mixed/Rectangle.obj",
+            "defaultColors": {
+                "Surface": "262626"
+            },
+            "name": "Rectangle",
+            "physics": {
+                "mass": 20000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Rectangle.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Rau_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/Rau_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "20660cea-b8d8-4ebd-a7c9-9374cfb76886"
+        },
+        {
+            "col": "$MOD_DATA/Collision/Mixed/Leitplanke_col.obj",
+            "defaultColors": {
+                "Surface": "c71717"
+            },
+            "name": "Barrier",
+            "physics": {
+                "mass": 20000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Leitplanke.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/UniTex_dif.png",
+                                    "$MOD_DATA/Textures/UniTex_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "dc7c0425-a38a-4ef4-ba7d-70d753addc0a"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/kANAsset_col.obj",
+            "defaultColors": {
+                "Trashcan": "262626"
+            },
+            "name": "kAN Trashcan",
+            "physics": {
+                "mass": 20000,
+                "material": "Metal"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/kANAsset.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Trashcan"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/kANAsset_dif.png",
+                                    "$MOD_DATA/Textures/kANAsset_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "3e4032c5-dcf3-48ea-b0d0-31c26e023bd2"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/Moonbo_col.obj",
+            "defaultColors": {
+                "Surface": "313131"
+            },
+            "name": "Moonbo's Orbit",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Moonbo.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Moonbo_dif.png",
+                                    "$MOD_DATA/Textures/Moonbo_asg.png",
+									"$MOD_DATA/Textures/Moonbo_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "fb180458-834c-4e98-bea5-1052adb0b459"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/CGBurger_col.obj",
+            "defaultColors": {
+                "Outline": "3a2907"
+            },
+            "name": "Camodo Burger",
+            "physics": {
+                "mass": 20000,
+                "material": "Plastic"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/CGBurger.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Outline"
+                                },
+                                "material": "DifAsg",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/CG_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "092dff67-8b47-42d7-9339-26666c74a08c"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/ScrapMan_col.obj",
+            "defaultColors": {
+                "Color": "fe0000"
+            },
+            "name": "ScrapMan Gear",
+            "physics": {
+                "mass": 20000,
+                "material": "Plastic"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/ScrapMan.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Color"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/SM_dif.png",
+                                    "$MOD_DATA/Textures/SM_asg.png",
+									"$MOD_DATA/Textures/SM_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "1fcbfeb3-f117-48ef-b8c6-f9c6460f2f66"
+        },
+		{
+            "col": "$MOD_DATA/Mesh/Mixed/Water.obj",
+            "defaultColors": {
+                "Glass": "577a7a"
+            },
+            "name": "Glass",
+            "physics": {
+                "mass": 20000,
+                "material": "Glass"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Water.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Glass"
+                                },
+                                "material": "Glass",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/No_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "6900490c-a463-485c-8296-0f538c6bedb2"
+        },
+		{
+            "col": "$MOD_DATA/Mesh/Mixed/WaterRound.obj",
+            "defaultColors": {
+                "Glass": "577a7a"
+            },
+            "name": "Glass Round",
+            "physics": {
+                "mass": 20000,
+                "material": "Glass"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/WaterRound.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Glass"
+                                },
+                                "material": "Glass",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/No_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "07920b31-f25f-40ad-9463-40c5c59d243a"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/NoColl.obj",
+            "defaultColors": {
+                "Water": "577a7a"
+            },
+            "name": "Water",
+            "physics": {
+                "mass": 20000,
+                "material": "Glass"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Water.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Water"
+                                },
+                                "material": "Glass",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/No_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/Water_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "8feaaaf6-b4a8-4505-a2bb-9445ebbcf1fb"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/NoColl.obj",
+            "defaultColors": {
+                "Water": "577a7a"
+            },
+            "name": "Water Round",
+            "physics": {
+                "mass": 20000,
+                "material": "Glass"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/WaterRound.obj",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Water"
+                                },
+                                "material": "Glass",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/No_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/Water_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "f545b000-a5c7-497a-ac62-c06441de2115"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/WoodPlank_col.obj",
+            "defaultColors": {
+                "Wood": "7F4D24"
+            },
+            "name": "Wood Plank 1",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/WoodPlank.fbx",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/WoodPlank_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/WoodPlank_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "9c3f64ad-7217-4271-8f8c-19c0040280fb"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/WoodPlank2_col.obj",
+            "defaultColors": {
+                "Wood": "7F4D24"
+            },
+            "name": "Wood Plank 2",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/WoodPlank2.fbx",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/WoodPlank_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/WoodPlank_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "dccd2326-1a93-4584-bb3c-99a5b2b03ab0"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/SquareLogShort_col.obj",
+            "defaultColors": {
+                "Wood": "9b683a"
+            },
+            "name": "Square Log Short",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/SquareLogShort.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/HolzBalken_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/HolzBalken_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "5cccb8e2-fa23-4352-ac9e-21a3530b61b6"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/SquareLog_col.obj",
+            "defaultColors": {
+                "Wood": "9b683a"
+            },
+            "name": "Square Log",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/SquareLog.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/HolzBalken_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/HolzBalken_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "ed2cd48b-c2c2-45bf-8f28-ce4a65a9d462"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/TreeLog_col.obj",
+            "defaultColors": {
+                "Wood": "7F4D24"
+            },
+            "name": "Tree Log",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/TreeLog.fbx",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_dif.tga",
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_asg.tga",
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "8cf49890-db28-4224-a057-c97116c9e9ed"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/TreeLogShort_col.obj",
+            "defaultColors": {
+                "Wood": "7F4D24"
+            },
+            "name": "Tree Log Short",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/TreeLogShort.fbx",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Wood"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_dif.tga",
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_asg.tga",
+                                    "$GAME_DATA/Terrain/Textures/Forest/env_forest_pine_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "d7e61833-c728-4eb8-82a8-ada9346b2c28"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/TunelArch_col.obj",
+            "defaultColors": {
+                "Arch": "FFFFFF",
+				"Tunel": "D8D8D8"
+            },
+            "name": "Tunel Arch",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/TunelArch.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Arch"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Concrete_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/Concrete_nor.png"
+                                ]
+                            },
+							{
+                                "custom": {
+                                    "color": "Tunel"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Concrete_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/Concrete_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "d548d9e5-5427-4043-8dac-64a55327014a"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/Tunel_col.obj",
+            "defaultColors": {
+                "Tunel": "D8D8D8"
+            },
+            "name": "Tunel",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/Tunel.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Tunel"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Concrete_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/Concrete_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "54443a8d-359b-4cd4-a492-81e758294304"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/SquareTunel_col.obj",
+            "defaultColors": {
+                "Tunel": "D8D8D8"
+            },
+            "name": "Tunel",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/SquareTunel.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Tunel"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Concrete_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/Concrete_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "9fb2b167-e283-4714-be19-0eee5b171494"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/SquareConcrete_col.obj",
+            "defaultColors": {
+                "Tunel": "D8D8D8"
+            },
+            "name": "Tunel",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/SquareConcrete.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Tunel"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/Concrete_dif.png",
+                                    "$MOD_DATA/Textures/WoodPlank_asg.png",
+                                    "$MOD_DATA/Textures/Concrete_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "164819e0-064f-4aa9-8d84-9f9c010be4d5"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/16x16Invisible_col.obj",
+            "defaultColors": {
+                "Surface": "8d8f89"
+            },
+            "name": "Visible when close to it!",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 3,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/16x16Invisible.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_nor.tga"
+                                ]
+                            }
+                        ]
+                    },
+					{
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/16x16Invisible.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAlpha",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "2f7b6074-cdea-4a42-a843-b8940a2800fc"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/8x8Bricks_col.obj",
+            "defaultColors": {
+                "Surface": "FF8000"
+            },
+            "name": "Smooth Block 8x8x1",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/8x8Bricks.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/no_dif.png",
+                                    "$MOD_DATA/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Textures/nonor_nor.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "4a198ae4-dece-4842-84b7-47e32cf350aa"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/8x8Bricks_col.obj",
+            "defaultColors": {
+                "Surface": "af967b"
+            },
+            "name": "Bricks 8x8x1",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/8x8Bricks.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_bricks01_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_bricks01_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_bricks01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "1913b174-b699-4a1f-964c-28c030a8cd12"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/8x8Bricks_col.obj",
+            "defaultColors": {
+                "Surface": "8d8f89"
+            },
+            "name": "Concrete 8x8x1",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/8x8Bricks.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_concrete01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "374b08ec-73ed-4f39-96a2-834f36ead351"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/8x8Bricks_col.obj",
+            "defaultColors": {
+                "Surface": "9b683a"
+            },
+            "name": "Wood 8x8x1",
+            "physics": {
+                "mass": 20000,
+                "material": "Wood"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/8x8Bricks.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_woodplanks01_dif.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_woodplanks01_asg.tga",
+                                    "$GAME_DATA/Objects/Textures/Blocks/blk_woodplanks01_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "b5cee9a0-6059-4ac3-bbc7-ba9fbcac9c78"
+        },
+		{
+            "col": "$MOD_DATA/Collision/Mixed/16x16Grass_col.obj",
+            "defaultColors": {
+                "Surface": "5d7a16"
+            },
+            "name": "Grass 16x16",
+            "physics": {
+                "mass": 20000,
+                "material": "Stone"
+            },
+            "renderable": {
+                "lodList": [
+                    {
+                    		"includes": [
+                            "POSITION",
+                            "NORMAL",
+                            "UV0",
+                            "TANGENT"
+                        ],
+                        "maxViewDistance": 4500,
+                        "mesh": "$MOD_DATA/Mesh/Mixed/16x16Grass.dae",
+                        "subMeshList": [
+                            {
+                                "custom": {
+                                    "color": "Surface"
+                                },
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$MOD_DATA/Textures/gnd_grass_dif.png",
+                                    "$GAME_DATA/Terrain/Textures/Ground/gnd_grass_asg.tga",
+                                    "$GAME_DATA/Terrain/Textures/Ground/gnd_grass_nor.tga"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "uuid": "b700ad72-0503-44ba-add4-f1de356905b3"
+        }
+	]
+}
