@@ -27,6 +27,10 @@
             "usable" : false
          },
          "rotationSet" : "StaticYZX",
+         "scripted" : {
+            "classname" : "Rail",
+            "filename" : "$CONTENT_DATA/Scripts/Game/Interactables/Rail.lua"
+         },
          "uuid" : "f0caa8dc-889a-4aba-9cc1-0bf01826a15a"
       },
       {

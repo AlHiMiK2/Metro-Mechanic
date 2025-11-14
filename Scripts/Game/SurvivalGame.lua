@@ -935,3 +935,14 @@ function SurvivalGame.sv_e_unloadBeacon(self, params)
 		sm.log.warning("SurvivalGame.sv_e_unloadBeacon in a world that doesn't exist")
 	end
 end
+
+
+function SurvivalGame.client_onLoadingScreenLifted( self )
+	g_effectManager:cl_onLoadingScreenLifted()
+	self.network:sendToServer( "sv_n_loadingScreenLifted" )
+end
+function SurvivalGame.sv_n_loadingScreenLifted( self, _, player )
+	if not g_survivalDev then
+		QuestManager.Sv_TryActivateQuest( "quest_tutorial" )
+	end
+end
