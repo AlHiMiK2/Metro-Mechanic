@@ -50,6 +50,28 @@
             "filename" : "$CONTENT_DATA/Scripts/Game/Interactables/Broom.lua"
          },
          "uuid" : "8305013f-f609-4925-9024-301d128c3211"
+      },
+      {
+         "box" : {
+            "x" : 1,
+            "y" : 1,
+            "z" : 2
+         },
+         "name" : "Contact Broom Wide",
+         "physicsMaterial" : "Mechanical",
+         "ratings" : {
+            "buoyancy" : 0,
+            "density" : 5,
+            "durability" : 5,
+            "friction" : 1
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Contact_Broom_Wide.rend",
+         "rotationSet" : "PropNegY",
+         "scripted" : {
+            "classname" : "Broom",
+            "filename" : "$CONTENT_DATA/Scripts/Game/Interactables/Broom.lua"
+         },
+         "uuid" : "ed7dd70d-4848-4700-9a9b-77b4966dedd2"
       }
    ]
 }
