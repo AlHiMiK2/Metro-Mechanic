@@ -1,0 +1,23 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/env_ruin_tube_07.fbx",
+         "minViewSize" : 800,
+         "subMeshMap" : {
+            "metalbar_mat" : {
+               "custom" : {
+                  "color" : "metal",
+                  "textureTiling" : [ 1.0, 1.0, 1.0, 1.0 ]
+               },
+               "material" : "DifAsgNorNorD_UV1",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruin_metal_dif.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruin_metal_asg.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruin_metal_nor.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/trim_layout01_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

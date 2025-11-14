@@ -11,6 +11,10 @@
       {
          "assetSet" : "$CONTENT_DATA/AssetPacks/1331879173/Database/AssetSets/Mixed.json",
          "category" : "LP - Mixed"
+      },
+      {
+         "assetSet" : "$CONTENT_DATA/Terrain/Database/AssetSets/Tube.assetset",
+         "category" : "Tube"
       }
    ]
 }
