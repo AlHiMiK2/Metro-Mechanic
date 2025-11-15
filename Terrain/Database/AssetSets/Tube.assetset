@@ -2,9 +2,7 @@
    "assetListRenderable" : [
       {
          "col" : "$SURVIVAL_DATA/Terrain/Collision/Ruin/env_ruin_tube_01_col.obj",
-         "defaultColors" : {
-            "metal" : [ "344727ff", "365a3fff", "36624fff" ]
-         },
+         "defaultColors" : {},
          "name" : "env_ruin_tube_07",
          "physics" : {
             "mass" : 10000.0,
