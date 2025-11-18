@@ -2,7 +2,9 @@
    "assetListRenderable" : [
       {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/env_ruin_tube_07_col.obj",
-         "defaultColors" : {},
+         "defaultColors" : {
+            "color" : "ffffffff"
+         },
          "name" : "env_ruin_tube_07",
          "physics" : {
             "mass" : 10000.0,
@@ -10,6 +12,40 @@
          },
          "renderable" : "$CONTENT_DATA/Terrain/Renderables/env_ruin_tube_07.rend",
          "uuid" : "e47d459d-ab80-45b8-852e-0387223d50ea"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/PipeTurn_col.obj",
+         "defaultColors" : {
+            "Pipe" : "262626"
+         },
+         "name" : "Big Pipe Turn",
+         "physics" : {
+            "mass" : 20000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "includes" : [ "POSITION", "NORMAL", "UV0", "TANGENT" ],
+                  "maxViewDistance" : 4500,
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/PipeTurn.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "color" : "Pipe"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/env_manmade_tank_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/env_manmade_tank_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/env_manmade_tank_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "69c02da1-172e-4e25-9e7e-5983a0022f3c"
       }
    ]
 }
