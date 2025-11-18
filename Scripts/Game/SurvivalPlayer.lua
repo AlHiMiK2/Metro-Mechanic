@@ -111,6 +111,13 @@ function SurvivalPlayer.client_onCreate(self)
 		self.cl.followCutscene = 0
 		self.cl.tutorialsWatched = {}
 	end
+	
+	--darkness effect start
+    local effect = sm.effect.createEffect("ShapeRenderable", self.player.character)
+    effect:setParameter("uuid", sm.uuid.new("628b2d61-5ceb-43e9-8334-a4135566df7a"))
+    effect:setScale(sm.vec3.new(5000, 5000, 5000))
+    effect:start()
+    --darkness effect end
 
 	self:cl_init()
 end
