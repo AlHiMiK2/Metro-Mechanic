@@ -2,9 +2,9 @@
    "assetListRenderable" : [
       {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/env_ruin_tube_07_col.obj",
-         "defaultColors" : {
-            "color" : "ffffffff"
-         },
+            "defaultColors": {
+                "metal": "344727ff"
+            },
          "name" : "env_ruin_tube_07",
          "physics" : {
             "mass" : 10000.0,
