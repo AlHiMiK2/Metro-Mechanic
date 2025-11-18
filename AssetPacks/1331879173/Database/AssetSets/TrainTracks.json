@@ -109,17 +109,6 @@
                   "subMeshList" : [
                      {
                         "custom" : {
-                           "color" : "Concrete"
-                        },
-                        "material" : "DifAsgNor",
-                        "textureList" : [
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
-                        ]
-                     },
-                     {
-                        "custom" : {
                            "color" : "Rail"
                         },
                         "material" : "DifAsgNor",
@@ -127,6 +116,17 @@
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
                         ]
                      }
                   ]
@@ -154,17 +154,6 @@
                   "subMeshList" : [
                      {
                         "custom" : {
-                           "color" : "Concrete"
-                        },
-                        "material" : "DifAsgNor",
-                        "textureList" : [
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
-                        ]
-                     },
-                     {
-                        "custom" : {
                            "color" : "Rail"
                         },
                         "material" : "DifAsgNor",
@@ -172,6 +161,17 @@
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
                         ]
                      }
                   ]
@@ -199,17 +199,6 @@
                   "subMeshList" : [
                      {
                         "custom" : {
-                           "color" : "Concrete"
-                        },
-                        "material" : "DifAsgNor",
-                        "textureList" : [
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
-                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
-                        ]
-                     },
-                     {
-                        "custom" : {
                            "color" : "Rail"
                         },
                         "material" : "DifAsgNor",
@@ -217,6 +206,17 @@
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
                            "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
                         ]
                      }
                   ]
