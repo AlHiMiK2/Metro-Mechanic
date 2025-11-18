@@ -19,6 +19,14 @@ function initCustomTiles()
 		rotation = 3
 	}
 
+	g_road_obstacles = { 
+		tiles = { 
+			AddTile( 1128001, "$CONTENT_DATA/Terrain/Tiles/MetroRoad2.tile" ), 
+		},
+		rotation = 3,
+		chance = 5 ---100%(max)
+	}
+
   	g_roads_r_in = { 
 		tiles = { 
 			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/MetroRIn.tile" ), 
@@ -101,7 +109,13 @@ function getDesertTileId( variationNoise )
 end
 
 function getRoadTileIdAndRotation( variationNoise )
-	local tiles = g_roads.tiles
+	local tiles = nil
+
+	if sm.noise.randomRange(0, 100) <= g_road_obstacles.chance then
+		tiles = g_road_obstacles.tiles
+	else
+		tiles = g_roads.tiles
+	end
 
 	local tileCount = #tiles
 

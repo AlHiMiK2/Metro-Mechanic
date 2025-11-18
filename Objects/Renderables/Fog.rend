@@ -4,7 +4,7 @@
          "mesh" : "$CONTENT_DATA/Objects/Mesh/Fog.fbx",
          "subMeshList" : [
             {
-               "material" : "DifAsgNor",
+               "material" : "DifAsgNorNoShadows",
                "textureList" : [
                   "$SURVIVAL_DATA/Objects/Textures/blocks/blk_plastic_dif.tga",
                   "$SURVIVAL_DATA/Objects/Textures/blocks/blk_plastic_dif.tga",

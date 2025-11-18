@@ -138,8 +138,6 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
 
     local y = start
     while y <= yMax - padding - 2 do
-        local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y + offset, g_cellData.seed + 2854 ))
-
         if nextTurnY == y then
             if currentOffset == -1 then
                 placeRoadTurn(true, currentOffset, y)
@@ -159,6 +157,8 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
             y = y + 1
             nextTurnY = nextTurnY + math.random(30, 65)
         else
+            local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y + offset, g_cellData.seed + 2854 ))
+            
             writePoi(tileId, currentOffset, y, 1, rotation)
             writePoi(tileId, currentOffset + 1, y, 1, rotation)
         end
