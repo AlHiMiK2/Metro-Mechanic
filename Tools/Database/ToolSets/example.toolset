@@ -1,3 +1,15 @@
 {
-	"toolList": []
+   "toolList" : [
+      {
+         "autoTool" : true,
+         "name" : "Fog",
+         "previewRenderable" : "$GAME_DATA/Character/Char_Tools/char_connecttool_preview.rend",
+         "script" : {
+            "class" : "FogEffect",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/Game/Tools/FogEffect.lua"
+         },
+         "uuid" : "d51f1900-88fd-411f-9384-d57fb084a863"
+      }
+   ]
 }
