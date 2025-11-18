@@ -105,7 +105,7 @@
             "lodList" : [
                {
                   "maxViewDistance" : 4500,
-                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailCurveH90.obj",
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailCurveH90.fbx",
                   "subMeshList" : [
                      {
                         "custom" : {
@@ -134,6 +134,96 @@
             ]
          },
          "uuid" : "9e874957-a13e-4f33-b2b8-62a434db6e92"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailCurveH90_col2.obj",
+         "defaultColors" : {
+            "Concrete" : "959595",
+            "Rail" : "685e54"
+         },
+         "name" : "Rail Tight 90° Curve2",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "maxViewDistance" : 4500,
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailCurveH90_2.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Rail"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "e34f22de-ae4b-4ddd-99f9-6fb317c20e85"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailCurveH90_col3.obj",
+         "defaultColors" : {
+            "Concrete" : "959595",
+            "Rail" : "685e54"
+         },
+         "name" : "Rail Tight 90° Curve3",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "maxViewDistance" : 4500,
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailCurveH90_3.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Rail"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "159e52b0-83bb-4316-b7c5-7ffc602c17fd"
       },
       {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailCurveH45Big_col.obj",

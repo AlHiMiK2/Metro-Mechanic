@@ -1,17 +1,15 @@
 {
    "assetListRenderable" : [
       {
-         "col" : "$SURVIVAL_DATA/Terrain/Collision/Ruin/env_ruin_tube_01_col.obj",
-         "defaultColors" : {
-            "metal" : [ "344727ff", "365a3fff", "36624fff" ]
-         },
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/env_ruin_tube_07_col.obj",
+         "defaultColors" : {},
          "name" : "env_ruin_tube_07",
          "physics" : {
             "mass" : 10000.0,
             "material" : "Metal"
          },
-         "renderable" : "$SURVIVAL_DATA/Terrain/Renderable/Ruin/env_ruin_tube_01.rend",
-         "uuid" : "a43b9da7-6337-4c18-8851-3df5443f3701"
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/env_ruin_tube_07.rend",
+         "uuid" : "e47d459d-ab80-45b8-852e-0387223d50ea"
       }
    ]
 }

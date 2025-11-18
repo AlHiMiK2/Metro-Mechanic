@@ -44,6 +44,34 @@ local function validPlacement(x, y, size, collisionArray)
     return true
 end
 
+local function placeRoadTurn(isRight, x, y)
+    local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+
+    if isRight then
+        local inTileId, inRotation = getRoadRInTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+        local outTileId, outRotation = getRoadROutTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+
+        writePoi(inTileId, x, y + 1, 1, inRotation)
+        writePoi(outTileId, x + 1, y + 1, 1, outRotation)
+        writePoi(tileId, x, y, 1, inRotation)
+
+        writePoi(inTileId, x + 1, y, 1, inRotation)
+        writePoi(outTileId, x + 2, y, 1, outRotation)
+        writePoi(tileId, x + 2, y + 1, 1, inRotation)
+    else
+        local inTileId, inRotation = getRoadLInTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+        local outTileId, outRotation = getRoadLOutTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+
+        writePoi(inTileId, x, y, 1, inRotation)
+        writePoi(outTileId, x - 1, y, 1, outRotation)
+        writePoi(tileId, x - 1, y + 1, 1, inRotation)
+
+        writePoi(inTileId, x + 1, y + 1, 1, inRotation)
+        writePoi(outTileId, x, y + 1, 1, outRotation)
+        writePoi(tileId, x + 1, y, 1, inRotation)
+    end
+end
+
 -- Fills g_cellData with world data
 function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, progress)
     math.randomseed(seed + progress * 10)
@@ -105,12 +133,38 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
         start = 0
     end
 
-    for y = start, yMax - padding - 2 do
+    local turnRate = 10
+    local currentOffset = 0
+
+    local y = start
+    while y <= yMax - padding - 2 do
         local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y + offset, g_cellData.seed + 2854 ))
-        writePoi(tileId, 0, y, 1, rotation)
-        writePoi(tileId, 1, y, 1, rotation)
+
+        if y % turnRate == 0 and y >= turnRate then
+            if currentOffset == -1 then
+                placeRoadTurn(true, currentOffset, y)
+                currentOffset = 0
+            elseif currentOffset == 0 then
+                if math.random(0, 1) == 0 then
+                    placeRoadTurn(true, currentOffset, y)
+                    currentOffset = 1
+                else
+                    placeRoadTurn(false, currentOffset, y)
+                    currentOffset = -1
+                end
+            elseif currentOffset == 1 then
+                placeRoadTurn(false, currentOffset, y)
+                currentOffset = 0
+            end
+            y = y + 1
+        else
+            writePoi(tileId, currentOffset, y, 1, rotation)
+            writePoi(tileId, currentOffset + 1, y, 1, rotation)
+        end
+
+        y = y + 1
     end
-    
+
     -- Road start tile
     local roadStart = yMin + padding + 1
     if progress == 0 then

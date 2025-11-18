@@ -4,7 +4,7 @@
          "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/env_ruin_tube_07.fbx",
          "minViewSize" : 800,
          "subMeshMap" : {
-            "metalbar_mat" : {
+            "metalbar_mat.001" : {
                "custom" : {
                   "color" : "metal",
                   "textureTiling" : [ 1.0, 1.0, 1.0, 1.0 ]

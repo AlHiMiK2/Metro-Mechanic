@@ -12,35 +12,63 @@ function initCustomTiles()
 	}
 
   -- Just north/south straight road tiles with no cliff data
-  g_roads = { 
+  	g_roads = { 
 		tiles = { 
-			AddTile( 1128001, "$CONTENT_DATA/Terrain/Tiles/Metro/MetroRoad.tile" ), 
+			AddTile( 1128001, "$CONTENT_DATA/Terrain/Tiles/MetroRoad.tile" ), 
 		},
 		rotation = 3
 	}
 
-  g_road_ends = { 
+  	g_roads_r_in = { 
+		tiles = { 
+			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/MetroRIn.tile" ), 
+		},
+		rotation = 3
+	}
+
+	g_roads_r_out = { 
+		tiles = { 
+			AddTile( 1128003, "$CONTENT_DATA/Terrain/Tiles/MetroROut.tile" ), 
+		},
+		rotation = 3
+	}
+
+	g_roads_l_in = { 
+		tiles = { 
+			AddTile( 1128004, "$CONTENT_DATA/Terrain/Tiles/MetroLIn.tile" ), 
+		},
+		rotation = 3
+	}
+
+	g_roads_l_out = { 
+		tiles = { 
+			AddTile( 1128005, "$CONTENT_DATA/Terrain/Tiles/MetroLOut.tile" ), 
+		},
+		rotation = 3
+	}
+
+  	g_road_ends = { 
 		AddTile( 1293000, "$CONTENT_DATA/Terrain/Tiles/Drisnya/road_end.tile" ), 
 	}
 	
-  g_starter_connectors = { 
+  	g_starter_connectors = { 
 		AddTile( 5323001, "$CONTENT_DATA/Terrain/Tiles/Drisnya/StarterConnectionRoad.tile" ), 
 	}
 
-  g_elevators = { 
+  	g_elevators = { 
 		AddTile( 9423000, "$CONTENT_DATA/Terrain/Tiles/Drisnya/elevator.tile" ), 
 	}
 
-  g_fences = {
+  	g_fences = {
 		AddTile( 5002500, "$CONTENT_DATA/Terrain/Tiles/Drisnya/fence_01.tile", 5 ),
 		AddTile( 5002501, "$CONTENT_DATA/Terrain/Tiles/Drisnya/fence_02.tile", 5 ),
 	}
 
-  g_fence_corners = {
+  	g_fence_corners = {
 		AddTile( 5002600, "$CONTENT_DATA/Terrain/Tiles/Drisnya/fence_corner_01.tile", 5 ),
 	}
 
-  g_scorched = {
+  	g_scorched = {
 		AddTile( 1232500, "$CONTENT_DATA/Terrain/Tiles/Drisnya/scorched_01.tile", 5 ),
 		AddTile( 1232501, "$CONTENT_DATA/Terrain/Tiles/Drisnya/scorched_02.tile", 5 ),
 		AddTile( 1232502, "$CONTENT_DATA/Terrain/Tiles/Drisnya/scorched_03.tile", 5 ),
@@ -82,6 +110,62 @@ function getRoadTileIdAndRotation( variationNoise )
 	end
 
 	local rotation = g_roads.rotation
+
+	return tiles[variationNoise % tileCount + 1], rotation
+end
+
+function getRoadRInTileIdAndRotation( variationNoise )
+	local tiles = g_roads_r_in.tiles
+
+	local tileCount = #tiles
+
+	if tileCount == 0 then
+		return ERROR_TILE_UUID, 0
+	end
+
+	local rotation = g_roads_r_in.rotation
+
+	return tiles[variationNoise % tileCount + 1], rotation
+end
+
+function getRoadROutTileIdAndRotation( variationNoise )
+	local tiles = g_roads_r_out.tiles
+
+	local tileCount = #tiles
+
+	if tileCount == 0 then
+		return ERROR_TILE_UUID, 0
+	end
+
+	local rotation = g_roads_r_out.rotation
+
+	return tiles[variationNoise % tileCount + 1], rotation
+end
+
+function getRoadLInTileIdAndRotation( variationNoise )
+	local tiles = g_roads_l_in.tiles
+
+	local tileCount = #tiles
+
+	if tileCount == 0 then
+		return ERROR_TILE_UUID, 0
+	end
+
+	local rotation = g_roads_l_in.rotation
+
+	return tiles[variationNoise % tileCount + 1], rotation
+end
+
+function getRoadLOutTileIdAndRotation( variationNoise )
+	local tiles = g_roads_l_out.tiles
+
+	local tileCount = #tiles
+
+	if tileCount == 0 then
+		return ERROR_TILE_UUID, 0
+	end
+
+	local rotation = g_roads_l_out.rotation
 
 	return tiles[variationNoise % tileCount + 1], rotation
 end
