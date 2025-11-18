@@ -25,7 +25,7 @@ SurvivalGame.enableRestrictions = true
 SurvivalGame.enableFuelConsumption = true
 SurvivalGame.enableAmmoConsumption = true
 SurvivalGame.enableUpgrade = true
-SurvivalGame.defaultInventorySize = 10 -- I can't believe I found this AFTER I ADD MY OWN INVENTORY LIMIT   ┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻
+SurvivalGame.defaultInventorySize = 40 -- I can't believe I found this AFTER I ADD MY OWN INVENTORY LIMIT   ┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻
 
 local SyncInterval = 400 -- 400 ticks | 10 seconds
 local IntroFadeDuration = 1.1

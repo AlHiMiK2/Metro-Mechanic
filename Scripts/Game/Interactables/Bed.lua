@@ -1,5 +1,4 @@
 -- you get NO BEDS ┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻
-
 Bed = class( nil )
 
 function Bed.client_onInteract( self, character, state )
