@@ -1,13 +1,6 @@
 {
    "allow_add_mods" : true,
    "custom_icons" : false,
-   "dependencies" : [
-      {
-         "fileId" : 2851449097,
-         "localId" : "39531f1d-5df3-406d-a4bc-c08f5a74ea47",
-         "name" : "Advanced Tools"
-      }
-   ],
    "description" : "This mod doesn't have a description",
    "localId" : "a9591e33-88cf-444f-924c-7b141339d572",
    "name" : "Metro Mechanic",

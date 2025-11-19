@@ -18,8 +18,8 @@ local renderables = {
 	"$CONTENT_DATA/Characters/Renderable/DrillTool.rend"
 }
 
-local renderablesTp = {"$GAME_DATA/Character/Char_Male/Animations/char_male_tp_sledgehammer.rend", "$GAME_DATA/Character/Char_Tools/Char_sledgehammer/char_sledgehammer_tp_animlist.rend"}
-local renderablesFp = {"$GAME_DATA/Character/Char_Tools/Char_sledgehammer/char_sledgehammer_fp_animlist.rend"}
+local renderablesTp = {"$CONTENT_DATA/Characters/Renderable/DrillTool.rend", "$CONTENT_DATA/Characters/Renderable/DrillToolTpAnimations.rend"}
+local renderablesFp = {"$CONTENT_DATA/Characters/Renderable/DrillToolFpAnimations.rend"}
 
 sm.tool.preloadRenderables( renderables )
 sm.tool.preloadRenderables( renderablesTp )
@@ -91,16 +91,6 @@ function DrillTool.loadAnimations( self )
 			sledgehammer_attack2 = { "sledgehammer_attack2", { nextAnimation = "sledgehammer_exit2" } },
 			sledgehammer_exit1 = { "sledgehammer_exit1", { nextAnimation = "idle" } },
 			sledgehammer_exit2 = { "sledgehammer_exit2", { nextAnimation = "idle" } },
-			
-			guardInto = { "sledgehammer_guard_into", { nextAnimation = "guardIdle" } },
-			guardIdle = { "sledgehammer_guard_idle", { looping = true } },
-			guardExit = { "sledgehammer_guard_exit", { nextAnimation = "idle" } },
-			
-			guardBreak = { "sledgehammer_guard_break", { nextAnimation = "idle" } }--,
-			--guardHit = { "sledgehammer_guard_hit", { nextAnimation = "guardIdle" } }
-			--guardHit is missing for tp
-			
-		
 		}
 	)
 	local movementAnimations = {

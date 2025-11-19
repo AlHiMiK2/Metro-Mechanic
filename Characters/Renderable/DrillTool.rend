@@ -1,13 +1,7 @@
 {
    "lodList" : [
       {
-         "animationList" : [
-            {
-               "file" : "$CONTENT_DATA/Tools/Mesh/DrillTool/Animations/Drill_Rotating.dae",
-               "name" : "Rotation"
-            }
-         ],
-         "mesh" : "$CONTENT_DATA/Tools/Mesh/DrillTool/DrillTool.fbx",
+         "mesh" : "$CONTENT_DATA/Tools/Mesh/DrillTool/DrillTool.dae",
          "subMeshMap" : {
             "Material.001" : {
                "color" : "78211f",

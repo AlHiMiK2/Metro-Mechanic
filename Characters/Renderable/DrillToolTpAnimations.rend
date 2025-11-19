@@ -1,0 +1,78 @@
+{
+   "lodList" : [
+      {
+         "animationList" : [
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_run"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_runbwd"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_sprint_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_crouch_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_crouch_run"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_crouch_runbwd"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_jump"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_jump_up"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "looping" : true,
+               "name" : "drilltool_jump_down"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_jump_land"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_jump_land_fwd"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_jump_land_bwd"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_pickup"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool.rend",
+               "name" : "drilltool_putdown"
+            }
+         ],
+         "maxViewDistance" : 1000.0
+      }
+   ]
+}
