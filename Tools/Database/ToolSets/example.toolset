@@ -10,6 +10,17 @@
             "file" : "$CONTENT_DATA/Scripts/Game/Tools/FogEffect.lua"
          },
          "uuid" : "d51f1900-88fd-411f-9384-d57fb084a863"
+      },
+      {
+         "name" : "DrillTool",
+         "previewRenderable" : "$CONTENT_DATA/Characters/Renderable/DrillToolPreview.rend",
+         "previewRotation" : [ 1, 0, 0, 0, 0, -1, 0, 1, 0 ],
+         "script" : {
+            "class" : "DrillTool",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/Game/Tools/DrillTool.lua"
+         },
+         "uuid" : "3c5c8d8c-d3c2-4952-a059-fbc9a641f2ac"
       }
    ]
 }
