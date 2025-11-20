@@ -1,0 +1,43 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/Replacement/water_tank_pose1.fbx",
+         "pose0" : "$CONTENT_DATA/Objects/Mesh/Replacement/water_tank_pose0.fbx",
+         "pose1" : "$CONTENT_DATA/Objects/Mesh/Replacement/water_tank_pose2.fbx",
+         "subMeshMap" : {
+            "glass02" : {
+               "material" : "Glass",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_waterdispensertank_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_waterdispensertank_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_waterdispensertank_nor.tga"
+               ]
+            },
+            "life_water" : {
+               "material" : "2PoseAnimDifNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/Replacement/water_tank_dif.png",
+                  "$CONTENT_DATA/Objects/Textures/Replacement/water_tank_asg.png",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_waterdispensertank_nor.TGA"
+               ]
+            },
+            "water" : {
+               "material" : "2PoseAnimDifNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/Replacement/water_tank_dif.png",
+                  "$CONTENT_DATA/Objects/Textures/Replacement/water_tank_asg.png",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_waterdispensertank_nor.TGA"
+               ]
+            },
+            "waterdispensertexturepsd" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}
