@@ -1,0 +1,108 @@
+{
+   "partList" : [
+      {
+         "box" : {
+            "x" : 3,
+            "y" : 3,
+            "z" : 3
+         },
+         "color" : "408fc7",
+         "flammable" : true,
+         "name" : "obj_office_waterdispensertank",
+         "physicsMaterial" : "Plastic",
+         "ratings" : {
+            "buoyancy" : 6,
+            "density" : 2,
+            "durability" : 1,
+            "friction" : 4
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Replacement/Water_Tank.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "WaterTank",
+            "data" : {
+               "filterUid" : "869d4736-289a-4952-96cd-8a40117a2d28",
+               "stackSize" : 20
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Replacement/WaterTank.lua"
+         },
+         "uuid" : "e7eae129-9e3f-45d2-997c-637865c60a5e"
+      },
+      {
+         "button" : {},
+         "color" : "b43320",
+         "flammable" : true,
+         "hull" : {
+            "col" : "$SURVIVAL_DATA/Objects/Collision/obj_office_mugholder.obj",
+            "x" : 1,
+            "y" : 3,
+            "z" : 1
+         },
+         "name" : "obj_office_mugholder",
+         "physicsMaterial" : "Plastic",
+         "ratings" : {
+            "buoyancy" : 3,
+            "density" : 2,
+            "durability" : 2,
+            "friction" : 5
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Replacement/Water_Dispencer_button.rend",
+         "rotationSet" : "PropZ",
+         "sticky" : "+Y+X-X+Z-Z",
+         "uuid" : "239c9c71-e5c7-4ccb-ad40-7bdbb32f3cc9"
+      },
+      {
+         "box" : {
+            "x" : 3,
+            "y" : 4,
+            "z" : 3
+         },
+         "color" : "408fc7",
+         "flammable" : false,
+         "name" : "obj_office_waterdispenser",
+         "physicsMaterial" : "Metal",
+         "ratings" : {
+            "buoyancy" : 6,
+            "density" : 4,
+            "durability" : 3,
+            "friction" : 3
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Replacement/Water_Dispencer.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "MountedWaterGun",
+            "filename" : "$CONTENT_DATA/Scripts/Replacement/MountedWaterGun.lua"
+         },
+         "uuid" : "0c077288-d15d-45d6-8439-3dabe7144034"
+      },
+      {
+         "color" : "fc949d",
+         "flammable" : true,
+         "hull" : {
+            "col" : "$SURVIVAL_DATA/Objects/Collision/obj_decor_sunshakemachine.obj",
+            "x" : 5,
+            "y" : 8,
+            "z" : 5
+         },
+         "name" : "obj_decor_sunshakemachine",
+         "physicsMaterial" : "Metal",
+         "ratings" : {
+            "buoyancy" : 6,
+            "density" : 4,
+            "durability" : 4,
+            "friction" : 4
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Replacement/obj_decor_sunshakemachine.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "vend",
+            "data" : {
+               "filterUid" : "cb7305b2-d8b5-4302-aff3-6cdd9212ca64",
+               "stackSize" : 1
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Replacement/vend.lua"
+         },
+         "uuid" : "5ad298e4-f5ad-479c-9ec6-6c4f9d3fb8ae"
+      }
+   ]
+}

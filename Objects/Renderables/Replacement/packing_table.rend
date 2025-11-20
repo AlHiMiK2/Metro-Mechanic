@@ -1,0 +1,34 @@
+{
+   "lodList" : [
+      {
+         "animationList" : [
+            {
+               "file" : "$CONTENT_DATA/Objects/Mesh/Replacement/packing_table/Animations/obj_warehouse_packingtable_disactive.dae",
+               "name" : "Disactive"
+            },
+            {
+               "file" : "$CONTENT_DATA/Objects/Mesh/Replacement/packing_table/Animations/obj_warehouse_packingtable_working.dae",
+               "name" : "Working"
+            }
+         ],
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/Replacement/packing_table/obj_warehouse_packingtable.dae",
+         "subMeshMap" : {
+            "B_Mat" : {
+               "material" : "SkelAnimDifAsg",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Textures/Replacement/packing_table/obj_containers_vegbox_dif.tga",
+                  "$CONTENT_DATA/Objects/Textures/Replacement/packing_table/obj_containers_vegbox_asg.tga"
+               ]
+            },
+            "T_Mat" : {
+               "material" : "SkelAnimDifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_packingtable_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_packingtable_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_packingtable_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

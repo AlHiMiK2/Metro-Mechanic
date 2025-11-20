@@ -1,0 +1,20 @@
+{
+   "lodList" : [
+      {
+         "includes" : [ "POSITION", "UV0", "UV1", "NORMAL", "TANGENTS" ],
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/Replacement/obj_office_mugholder.fbx",
+         "pose0" : "$CONTENT_DATA/Objects/Mesh/Replacement/obj_office_mugholder_pose0.fbx",
+         "subMeshList" : [
+            {
+               "material" : "PoseAnimDifAsgNorAo",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_atlas_office_nor.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/building/obj_office_mugholder_ao.tga"
+               ]
+            }
+         ]
+      }
+   ]
+}
