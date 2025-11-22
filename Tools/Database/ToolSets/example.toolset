@@ -13,7 +13,7 @@
       },
       {
          "name" : "DrillTool",
-         "previewRenderable" : "$CONTENT_DATA/Characters/Renderable/DrillToolPreview.rend",
+         "previewRenderable" : "$CONTENT_DATA/Characters/Renderable/DrillTool/drilltool_preview.rend",
          "previewRotation" : [ 1, 0, 0, 0, 0, -1, 0, 1, 0 ],
          "script" : {
             "class" : "DrillTool",

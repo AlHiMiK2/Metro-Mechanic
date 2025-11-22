@@ -1,0 +1,24 @@
+{
+   "lodList" : [
+      {
+         "animationList" : [
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_idle.dae",
+               "looping" : true,
+               "name" : "drilltool_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_use.dae",
+               "looping" : true,
+               "name" : "drilltool_use"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_use2.dae",
+               "looping" : true,
+               "name" : "drilltool_use"
+            }
+         ],
+         "maxViewDistance" : 1000.0
+      }
+   ]
+}

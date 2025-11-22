@@ -1,3 +1,32 @@
 {
-    "meleeAttacks": []
+   "meleeAttacks" : [
+      {
+         "destruction" : {
+            "destructionLevels" : [
+               {
+                  "chance" : 1.0,
+                  "qualityLevel" : 1
+               },
+               {
+                  "chance" : 1.0,
+                  "qualityLevel" : 1
+               },
+               {
+                  "chance" : 1.0,
+                  "qualityLevel" : 1
+               },
+               {
+                  "chance" : 1.0,
+                  "qualityLevel" : 1
+               }
+            ]
+         },
+         "hitSphere" : {
+            "radius" : 0.10
+         },
+         "impactEffect" : "Drill - StoneDrill",
+         "name" : "DrillTool",
+         "uuid" : "d153268c-67d4-4436-9693-c8449816a6d2"
+      }
+   ]
 }

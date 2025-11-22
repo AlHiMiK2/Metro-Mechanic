@@ -1,4 +1,3 @@
-
 dofile( "$GAME_DATA/Scripts/game/AnimationUtil.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/util.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_meleeattacks.lua" )
@@ -8,112 +7,62 @@ local Damage = 20
 ---@class DrillTool : ToolClass
 ---@field isLocal boolean
 ---@field animationsLoaded boolean
----@field equipped boolean
----@field swingCooldowns table
 ---@field fpAnimations table
 ---@field tpAnimations table
 DrillTool = class()
 
 local renderables = {
-	"$CONTENT_DATA/Characters/Renderable/DrillTool.rend"
+	"$CONTENT_DATA/Characters/Renderable/DrillTool/drilltool.rend"
 }
 
-local renderablesTp = {"$CONTENT_DATA/Characters/Renderable/DrillTool.rend", "$CONTENT_DATA/Characters/Renderable/DrillToolTpAnimations.rend"}
-local renderablesFp = {"$CONTENT_DATA/Characters/Renderable/DrillToolFpAnimations.rend"}
+local renderablesTp = {"$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_tp.rend"}
+local renderablesFp = {"$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_fp.rend"}
 
 sm.tool.preloadRenderables( renderables )
 sm.tool.preloadRenderables( renderablesTp )
 sm.tool.preloadRenderables( renderablesFp )
 
-local Range = 3.0
-local SwingStaminaSpend = 1.5
+local Range = 2
+local AttackRate = 0.1
 
-DrillTool.swingCount = 2
-DrillTool.mayaFrameDuration = 1.0/30.0
-DrillTool.freezeDuration = 0.075
-
-DrillTool.swings = { "sledgehammer_attack1", "sledgehammer_attack2" }
-DrillTool.swingFrames = { 4.2 * DrillTool.mayaFrameDuration, 4.2 * DrillTool.mayaFrameDuration }
-DrillTool.swingExits = { "sledgehammer_exit1", "sledgehammer_exit2" }
-
-function DrillTool.client_onCreate( self )
+function DrillTool:client_onCreate()
 	self.isLocal = self.tool:isLocal()
 	self:init()
 end
 
-function DrillTool.client_onRefresh( self )
+function DrillTool:client_onRefresh()
 	self:init()
-	self:loadAnimations()
 end
 
-function DrillTool.init( self )
-	
-	self.attackCooldownTimer = 0.0
-	self.freezeTimer = 0.0
-	self.pendingRaycastFlag = false
-	self.nextAttackFlag = false
-	self.currentSwing = 1
-	
-	self.swingCooldowns = {}
-	for i = 1, self.swingCount do
-		self.swingCooldowns[i] = 0.0
-	end
-	
-	self.dispersionFraction = 0.001
-	
-	self.blendTime = 0.2
-	self.blendSpeed = 10.0
-	
-	self.sharedCooldown = 0.0
-	self.hitCooldown = 1.0
-	self.blockCooldown = 0.5
-	self.swing = false
-	self.block = false
-	
-	self.wantBlockSprint = false
-	
+function DrillTool:init()
 	if self.animationsLoaded == nil then
 		self.animationsLoaded = false
 	end
+
+	self.attackTimer = 0
+	self.blendTime = 0.2
+	self:loadAnimations()
 end
 
-function DrillTool.loadAnimations( self )
-
+function DrillTool:loadAnimations()
 	self.tpAnimations = createTpAnimations(
 		self.tool,
 		{
-			equip = { "sledgehammer_pickup", { nextAnimation = "idle" } },
-			unequip = { "sledgehammer_putdown" },
-			idle = {"sledgehammer_idle", { looping = true } },
-			idleRelaxed = {"sledgehammer_idle_relaxed", { looping = true } },
-			
-			sledgehammer_attack1 = { "sledgehammer_attack1", { nextAnimation = "sledgehammer_exit1" } },
-			sledgehammer_attack2 = { "sledgehammer_attack2", { nextAnimation = "sledgehammer_exit2" } },
-			sledgehammer_exit1 = { "sledgehammer_exit1", { nextAnimation = "idle" } },
-			sledgehammer_exit2 = { "sledgehammer_exit2", { nextAnimation = "idle" } },
+			idle = {"drilltool_idle", { looping = true } },
+			use = {"drilltool_use", { looping = true } }
 		}
 	)
 	local movementAnimations = {
-		idle = "sledgehammer_idle",
-		idleRelaxed = "sledgehammer_idle_relaxed",
-
-		runFwd = "sledgehammer_run_fwd",
-		runBwd = "sledgehammer_run_bwd",
-
-		sprint = "sledgehammer_sprint",
-
-		jump = "sledgehammer_jump",
-		jumpUp = "sledgehammer_jump_up",
-		jumpDown = "sledgehammer_jump_down",
-
-		land = "sledgehammer_jump_land",
-		landFwd = "sledgehammer_jump_land_fwd",
-		landBwd = "sledgehammer_jump_land_bwd",
-
-		crouchIdle = "sledgehammer_crouch_idle",
-		crouchFwd = "sledgehammer_crouch_fwd",
-		crouchBwd = "sledgehammer_crouch_bwd"
-		
+		idle = "drilltool_idle",
+		runFwd = "drilltool_idle",
+		runBwd = "drilltool_idle",
+		sprint = "drilltool_idle",
+		jump = "drilltool_idle",
+		jumpUp = "drilltool_idle",
+		jumpDown = "drilltool_idle",
+		land = "drilltool_idle",
+		landFwd = "drilltool_idle",
+		landBwd = "drilltool_idle",
 	}
 
 	for name, animation in pairs( movementAnimations ) do
@@ -126,254 +75,89 @@ function DrillTool.loadAnimations( self )
 		self.fpAnimations = createFpAnimations(
 			self.tool,
 			{
-				equip = { "sledgehammer_pickup", { nextAnimation = "idle" } },
-				unequip = { "sledgehammer_putdown" },				
-				idle = { "sledgehammer_idle",  { looping = true } },
-				
-				sprintInto = { "sledgehammer_sprint_into", { nextAnimation = "sprintIdle" } },
-				sprintIdle = { "sledgehammer_sprint_idle", { looping = true } },
-				sprintExit = { "sledgehammer_sprint_exit", { nextAnimation = "idle" } },
-				
-				sledgehammer_attack1 = { "sledgehammer_attack1", { nextAnimation = "sledgehammer_exit1" } },
-				sledgehammer_attack2 = { "sledgehammer_attack2", { nextAnimation = "sledgehammer_exit2" } },
-				sledgehammer_exit1 = { "sledgehammer_exit1", { nextAnimation = "idle" } },
-				sledgehammer_exit2 = { "sledgehammer_exit2", { nextAnimation = "idle" } },
-				
-				guardInto = { "sledgehammer_guard_into", { nextAnimation = "guardIdle" } },
-				guardIdle = { "sledgehammer_guard_idle", { looping = true } },
-				guardExit = { "sledgehammer_guard_exit", { nextAnimation = "idle" } },
-				
-				guardBreak = { "sledgehammer_guard_break", { nextAnimation = "idle" } },
-				guardHit = { "sledgehammer_guard_hit", { nextAnimation = "guardIdle" } }
-			
+				equip = { "drilltool_idle", { nextAnimation = "idle" } },
+				unequip = { "drilltool_idle" },
+				idle = { "drilltool_idle",  { looping = true } },
 			}
 		)
 		setFpAnimation( self.fpAnimations, "idle", 0.0 )
 	end
-	--self.swingCooldowns[1] = self.fpAnimations.animations["sledgehammer_attack1"].info.duration
-	self.swingCooldowns[1] = 0.6
-	--self.swingCooldowns[2] = self.fpAnimations.animations["sledgehammer_attack2"].info.duration
-	self.swingCooldowns[2] = 0.6
-	
+
 	self.animationsLoaded = true
-
 end
 
-function DrillTool.client_onUpdate( self, dt )
-	
+function DrillTool:client_onUpdate( dt )
+	if self.attackTimer < AttackRate then
+		self.attackTimer = self.attackTimer + dt
+	end
+
 	if not self.animationsLoaded then
 		return
 	end
-	
-	--synchronized update
-	self.attackCooldownTimer = math.max( self.attackCooldownTimer - dt, 0.0 )
 
-	--standard third person updateAnimation
-	updateTpAnimations( self.tpAnimations, self.equipped, dt )
-	
-	--update
-	if self.isLocal then
-		
-		if self.fpAnimations.currentAnimation == self.swings[self.currentSwing] then
-			self:updateFreezeFrame(self.swings[self.currentSwing], dt)
-		end
-		
-		local preAnimation = self.fpAnimations.currentAnimation
-
+	if self.tool:isLocal() then
 		updateFpAnimations( self.fpAnimations, self.equipped, dt )
-		
-		if preAnimation ~= self.fpAnimations.currentAnimation then
+	end
+
+	local crouchWeight = self.tool:isCrouching() and 1.0 or 0.0
+	local normalWeight = 1.0 - crouchWeight
+	local totalWeight = 0.0
+
+	for name, animation in pairs( self.tpAnimations.animations ) do
+		animation.time = animation.time + dt
+
+		if name == self.tpAnimations.currentAnimation then
+			animation.weight = math.min( animation.weight + ( self.tpAnimations.blendSpeed * dt ), 1.0 )
 			
-			-- Ended animation - re-evaluate what next state is
-			
-			local keepBlockSprint = false
-			local endedSwing = preAnimation == self.swings[self.currentSwing] and self.fpAnimations.currentAnimation == self.swingExits[self.currentSwing]
-			if self.nextAttackFlag == true and endedSwing == true then
-				-- Ended swing with next attack flag
-				
-				-- Next swing
-				self.currentSwing = self.currentSwing + 1
-				if self.currentSwing > self.swingCount then
-					self.currentSwing = 1
+			if animation.looping == true then
+				if animation.time >= animation.info.duration then
+					animation.time = animation.time - animation.info.duration
 				end
-				local params = { name = self.swings[self.currentSwing] }
-				self.network:sendToServer( "server_startEvent", params )
-				sm.audio.play( "Sledgehammer - Swing" )
-				self.pendingRaycastFlag = true
-				self.nextAttackFlag = false
-				self.attackCooldownTimer = self.swingCooldowns[self.currentSwing]
-				keepBlockSprint = true
+			end
+			if animation.time >= animation.info.duration - self.blendTime and not animation.looping then
+				if ( name == "use" ) then
+					setTpAnimation( self.tpAnimations, "idle", 10.0 )
+				elseif name == "pickup" then
+					setTpAnimation( self.tpAnimations, "idle", 0.001 )
+				elseif animation.nextAnimation ~= "" then
+					setTpAnimation( self.tpAnimations, animation.nextAnimation, 0.001 )
+				end
 				
-			elseif isAnyOf( self.fpAnimations.currentAnimation, { "guardInto", "guardIdle", "guardExit", "guardBreak", "guardHit" } )  then
-				keepBlockSprint = true
-			end
-			
-			--Stop sprint blocking
-			self.tool:setBlockSprint(keepBlockSprint)
-		end
-		
-		local isSprinting =  self.tool:isSprinting() 
-		if isSprinting and self.fpAnimations.currentAnimation == "idle" and self.attackCooldownTimer <= 0 and not isAnyOf( self.fpAnimations.currentAnimation, { "sprintInto", "sprintIdle" } ) then
-			local params = { name = "sprintInto" }
-			self:client_startLocalEvent( params )
-		end
-		
-		if ( not isSprinting and isAnyOf( self.fpAnimations.currentAnimation, { "sprintInto", "sprintIdle" } ) ) and self.fpAnimations.currentAnimation ~= "sprintExit" then
-			local params = { name = "sprintExit" }
-			self:client_startLocalEvent( params )
-		end
-	end
-	
-end
-
-function DrillTool.updateFreezeFrame( self, state, dt )
-	local p = 1 - math.max( math.min( self.freezeTimer / self.freezeDuration, 1.0 ), 0.0 )
-	local playRate = p * p * p * p
-	self.fpAnimations.animations[state].playRate = playRate
-	self.freezeTimer = math.max( self.freezeTimer - dt, 0.0 )
-end
-
-function DrillTool.server_startEvent( self, params )
-	local player = self.tool:getOwner()
-	if player then
-		sm.event.sendToPlayer( player, "sv_e_staminaSpend", SwingStaminaSpend )
-	end
-	self.network:sendToClients( "client_startLocalEvent", params )
-end
-
-function DrillTool.client_startLocalEvent( self, params )
-	self:client_handleEvent( params )
-end
-
-function DrillTool.client_handleEvent( self, params )
-	
-	-- Setup animation data on equip
-	if params.name == "equip" then
-		self.equipped = true
-		--self:loadAnimations()
-	elseif params.name == "unequip" then
-		self.equipped = false
-	end
-
-	if not self.animationsLoaded then
-		return
-	end
-	
-	--Maybe not needed
--------------------------------------------------------------------
-	
-	-- Third person animations
-	local tpAnimation = self.tpAnimations.animations[params.name]
-	if tpAnimation then
-		local isSwing = false
-		for i = 1, self.swingCount do
-			if self.swings[i] == params.name then
-				self.tpAnimations.animations[self.swings[i]].playRate = 1
-				isSwing = true
-			end
-		end
-		
-		local blend = not isSwing
-		setTpAnimation( self.tpAnimations, params.name, blend and 0.2 or 0.0 )
-	end
-	
-	-- First person animations
-	if self.isLocal then
-		local isSwing = false
-		
-		for i = 1, self.swingCount do
-			if self.swings[i] == params.name then
-				self.fpAnimations.animations[self.swings[i]].playRate = 1
-				isSwing = true
-			end
-		end
-
-		if isSwing or isAnyOf( params.name, { "guardInto", "guardIdle", "guardExit", "guardBreak", "guardHit" } ) then
-			self.tool:setBlockSprint( true )
-		else
-			self.tool:setBlockSprint( false )
-		end
-		
-		if params.name == "guardInto" then
-			swapFpAnimation( self.fpAnimations, "guardExit", "guardInto", 0.2 )
-		elseif params.name == "guardExit" then
-			swapFpAnimation( self.fpAnimations, "guardInto", "guardExit", 0.2 )
-		elseif params.name == "sprintInto" then
-			swapFpAnimation( self.fpAnimations, "sprintExit", "sprintInto", 0.2 )
-		elseif params.name == "sprintExit" then
-			swapFpAnimation( self.fpAnimations, "sprintInto", "sprintExit", 0.2 )
-		else
-			local blend = not ( isSwing or isAnyOf( params.name, { "equip", "unequip" } ) )
-			setFpAnimation( self.fpAnimations, params.name, blend and 0.2 or 0.0 )
-		end
-		
-	end
-		
-end
-
---function Sledgehammer.sv_n_toggleTumble( self )
---	local character = self.tool:getOwner().character
---	character:setTumbling( not character:isTumbling() )
---end
-
-function DrillTool.client_onEquippedUpdate( self, primaryState, secondaryState )
-	--HACK Enter/exit tumble state when hammering
-	--if primaryState == sm.tool.interactState.start then
-	--	self.network:sendToServer( "sv_n_toggleTumble" )
-	--end
-
-	if self.pendingRaycastFlag then
-		local time = 0.0
-		local frameTime = 0.0
-		if self.fpAnimations.currentAnimation == self.swings[self.currentSwing] then
-			time = self.fpAnimations.animations[self.swings[self.currentSwing]].time
-			frameTime = self.swingFrames[self.currentSwing]
-		end
-		if time >= frameTime and frameTime ~= 0 then
-			self.pendingRaycastFlag = false
-			local raycastStart = sm.localPlayer.getRaycastStart()
-			local direction = sm.localPlayer.getDirection()
-			sm.melee.meleeAttack( melee_sledgehammer, Damage, raycastStart, direction * Range, self.tool:getOwner() )
-			local success, result = sm.localPlayer.getRaycast( Range, raycastStart, direction )
-			if success then
-				self.freezeTimer = self.freezeDuration
-			end
-		end
-	end
-	
-	--Start attack?
-	self.startedSwinging = ( self.startedSwinging or primaryState == sm.tool.interactState.start ) and primaryState ~= sm.tool.interactState.stop and primaryState ~= sm.tool.interactState.null
-	if primaryState == sm.tool.interactState.start or ( primaryState == sm.tool.interactState.hold and self.startedSwinging ) then
-		
-		--Check if we are currently playing a swing
-		if self.fpAnimations.currentAnimation == self.swings[self.currentSwing] then
-			if self.attackCooldownTimer < 0.125 then
-				self.nextAttackFlag = true
 			end
 		else
-			--Not currently swinging
-			--Is the prev attack done?
-			if self.attackCooldownTimer <= 0 then
-				self.currentSwing = 1
-				--Not sprinting and not close to anything
-				--Start swinging!
-				local params = { name = self.swings[self.currentSwing] }
-				self.network:sendToServer( "server_startEvent", params )
-				sm.audio.play( "Sledgehammer - Swing" )
-				self.pendingRaycastFlag = true
-				self.nextAttackFlag = false
-				self.attackCooldownTimer = self.swingCooldowns[self.currentSwing]
-			end
+			animation.weight = math.max( animation.weight - ( self.tpAnimations.blendSpeed * dt ), 0.0 )
 		end
+
+		totalWeight = totalWeight + animation.weight
 	end
 
-	--Secondary destruction
+	totalWeight = totalWeight == 0 and 1.0 or totalWeight
+	for name, animation in pairs( self.tpAnimations.animations ) do
+		local weight = animation.weight / totalWeight
+		if name == "idle" then
+			self.tool:updateMovementAnimation( animation.time, weight )
+		elseif animation.crouch then
+			self.tool:updateAnimation( animation.info.name, animation.time, weight * normalWeight )
+			self.tool:updateAnimation( animation.crouch.name, animation.time, weight * crouchWeight )
+		else
+			self.tool:updateAnimation( animation.info.name, animation.time, weight )
+		end
+	end
+end
+
+function DrillTool:client_onEquippedUpdate( primaryState, secondaryState )
+	if primaryState == sm.tool.interactState.hold and self.attackTimer >= AttackRate then
+		local raycastStart = sm.localPlayer.getRaycastStart()
+		local direction = sm.localPlayer.getDirection()
+
+		sm.melee.meleeAttack( sm.uuid.new("d153268c-67d4-4436-9693-c8449816a6d2"), Damage, raycastStart, direction * Range, self.tool:getOwner() )
+		self.attackTimer = 0
+	end
+
 	return true, false
-	
 end
 
-function DrillTool.client_onEquip( self, animate )
-
+function DrillTool:client_onEquip( animate )
 	if animate then
 		sm.audio.play( "Sledgehammer - Equip", self.tool:getPosition() )
 	end
@@ -382,21 +166,22 @@ function DrillTool.client_onEquip( self, animate )
 
 	for k,v in pairs( renderables ) do renderablesTp[#renderablesTp+1] = v end
 	for k,v in pairs( renderables ) do renderablesFp[#renderablesFp+1] = v end
-	
+
 	self.tool:setTpRenderables( renderablesTp )
 
 	self:init()
-	self:loadAnimations()
 
-	setTpAnimation( self.tpAnimations, "equip", 0.0001 )
+	setTpAnimation( self.tpAnimations, "idle", 0.0001 )
 
 	if self.isLocal then
 		self.tool:setFpRenderables( renderablesFp )
 		swapFpAnimation( self.fpAnimations, "unequip", "equip", 0.2 )
 	end
+
+	self.tool:setBlockSprint(true)
 end
 
-function DrillTool.client_onUnequip( self, animate )
+function DrillTool:client_onUnequip( animate )
 
 	self.equipped = false
 	if sm.exists( self.tool ) then
@@ -408,4 +193,6 @@ function DrillTool.client_onUnequip( self, animate )
 			swapFpAnimation( self.fpAnimations, "equip", "unequip", 0.2 )
 		end
 	end
+
+	self.tool:setBlockSprint(false)
 end

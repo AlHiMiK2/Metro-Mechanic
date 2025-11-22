@@ -1,0 +1,36 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Characters/Renderable/DrillTool/drilltool.dae",
+         "subMeshMap" : {
+            "Material.001" : {
+               "color" : "78211f",
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$GAME_DATA/Objects/Textures/industrial/obj_atlas_generic_dif.tga",
+                  "$GAME_DATA/Objects/Textures/industrial/obj_atlas_generic_asg.tga",
+                  "$GAME_DATA/Objects/Textures/industrial/obj_atlas_generic_nor.tga"
+               ]
+            },
+            "char_weldtool_mat" : {
+               "color" : "c98605",
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$GAME_DATA/Character/Char_Tools/Char_weldtool/char_weldtool_dif.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_weldtool/char_weldtool_asg.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_weldtool/char_weldtool_nor.tga"
+               ]
+            },
+            "farmbot" : {
+               "color" : "c98605",
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Character/Char_Farmbot/Char_Farmbot_dif.tga",
+                  "$SURVIVAL_DATA/Character/Char_Farmbot/Char_Farmbot_asg.tga",
+                  "$SURVIVAL_DATA/Character/Char_Farmbot/Char_Farmbot_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}
