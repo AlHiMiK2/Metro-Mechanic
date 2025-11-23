@@ -2,7 +2,7 @@ dofile( "$GAME_DATA/Scripts/game/AnimationUtil.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/util.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_meleeattacks.lua" )
 
-local Damage = 20
+local Damage = 2
 
 ---@class DrillTool : ToolClass
 ---@field isLocal boolean
@@ -106,19 +106,18 @@ function DrillTool:client_onUpdate( dt )
 		self.drillEffect:setParameter( "velocity", self.velocity)
 	end
 
-	if not self.animationsLoaded then
+	if self.animationsLoaded == false then
 		return
 	end
-
 	if self.useFlag ~= self.prevUseFlag then
 		if self.useFlag then
-			setTpAnimation( self.tpAnimations, "use", self.blendTime )
+			self.network:sendToServer( "server_startEvent", { name = "use" } )
 
 			if self.isLocal then
 				setFpAnimation( self.fpAnimations, "use", self.blendTime )
 			end
 		else
-			setTpAnimation( self.tpAnimations, "idle", self.blendTime )
+			self.network:sendToServer( "server_startEvent", { name = "idle" } )
 
 			if self.isLocal then
 				setFpAnimation( self.fpAnimations, "idle", self.blendTime )
@@ -143,7 +142,6 @@ function DrillTool:cl_aimUpdate(dt)
 	local crouchWeight = self.tool:isCrouching() and 1.0 or 0.0
 	local normalWeight = 1.0 - crouchWeight
 	local isSprinting =  self.tool:isSprinting()
-	local relativeMoveDirection = self.tool:getRelativeMoveDirection()
 	if ( self.tpAnimations.currentAnimation == "use") then
 		self.jointWeight = math.min( self.jointWeight + ( 10.0 * dt ), 1.0 )
 	else
@@ -196,7 +194,7 @@ function DrillTool:client_onEquippedUpdate( primaryState, secondaryState )
 		local raycastStart = sm.localPlayer.getRaycastStart()
 		local direction = sm.localPlayer.getDirection()
 
-		sm.melee.meleeAttack( sm.uuid.new("d153268c-67d4-4436-9693-c8449816a6d2"), Damage, raycastStart, direction * Range, self.tool:getOwner() )
+		sm.melee.meleeAttack( sm.uuid.new("d153268c-67d4-4436-9693-c8449816a6d2"), Damage, raycastStart, direction * Range, self.tool:getOwner(), 0, 1000 )
 		self.dispersion = 0.8
 		self.tool:setDispersionFraction(self.dispersion)
 		self.attackTimer = 0
@@ -255,4 +253,23 @@ function DrillTool:client_onUnequip( animate )
 	end
 
 	self.tool:setBlockSprint(false)
+end
+
+function DrillTool:server_startEvent( params )
+	self.network:sendToClients( "client_startLocalEvent", params )
+end
+
+function DrillTool:client_startLocalEvent( params )
+	self:client_handleEvent( params )
+end
+
+function DrillTool:client_handleEvent( params )
+	if not self.animationsLoaded then
+		return
+	end
+
+	local tpAnimation = self.tpAnimations.animations[params.name]
+	if tpAnimation then
+		setTpAnimation( self.tpAnimations, params.name, self.blendTime)
+	end
 end
