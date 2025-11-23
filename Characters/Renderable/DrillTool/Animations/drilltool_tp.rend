@@ -8,6 +8,16 @@
                "name" : "drilltool_idle"
             },
             {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_idle.dae",
+               "looping" : true,
+               "name" : "drilltool_run"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_idle.dae",
+               "looping" : true,
+               "name" : "drilltool_run2"
+            },
+            {
                "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_use.dae",
                "looping" : true,
                "name" : "drilltool_use"

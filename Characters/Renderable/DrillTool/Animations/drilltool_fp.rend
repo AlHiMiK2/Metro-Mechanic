@@ -3,9 +3,22 @@
       {
          "animationList" : [
             {
-               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_idle.dae",
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_equip_fp.dae",
+               "name" : "drilltool_equip"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_unequip_fp.dae",
+               "name" : "drilltool_unequip"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_idle_fp.dae",
                "looping" : true,
                "name" : "drilltool_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Characters/Renderable/DrillTool/Animations/drilltool_use_fp.dae",
+               "looping" : true,
+               "name" : "drilltool_use"
             }
          ],
          "maxViewDistance" : 1000.0
