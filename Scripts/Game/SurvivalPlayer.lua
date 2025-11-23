@@ -1,4 +1,4 @@
-dofile( "$GAME_DATA/Scripts/game/BasePlayer.lua" )
+dofile( "$CONTENT_DATA/Scripts/Game/BasePlayer.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/managers/QuestManager.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_camera.lua" )
 dofile( "$SURVIVAL_DATA/Scripts/game/survival_constants.lua" )
