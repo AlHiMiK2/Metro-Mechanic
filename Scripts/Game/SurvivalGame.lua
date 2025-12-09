@@ -65,6 +65,12 @@ function SurvivalGame.server_onCreate(self)
 	print(self.sv.saved.data)
 	if self.sv.saved.data and self.sv.saved.data.dev then
 		g_godMode = true
+
+		--unlimited
+		sm.game.setLimitedInventory(false)
+		self.network:sendToClients("client_showMessage", (state and "Limited inventory" or "Unlimited inventory"))
+		--unlimited
+
 		g_survivalDev = true
 		sm.log.info("Starting SurvivalGame in DEV mode")
 	end
@@ -185,6 +191,8 @@ function SurvivalGame.client_onCreate(self)
 	self.cl.time.timeOfDay = 0.0
 	self.cl.time.timeProgress = true
 
+	self.cl.glowEffect = {}
+
 	if not sm.isHost then
 		self:loadCraftingRecipes()
 		g_enableCollisionTumble = true
@@ -243,6 +251,12 @@ function SurvivalGame.bindChatCommands(self)
 		sm.game.bindChatCommand("/respawn", {}, "cl_onChatCommand", "Respawn at last bed (or at the crash site)")
 		sm.game.bindChatCommand("/limited", {}, "cl_onChatCommand", "Use the limited inventory")
 		sm.game.bindChatCommand("/unlimited", {}, "cl_onChatCommand", "Use the unlimited inventory")
+
+		--Romytrix Commands
+		sm.game.bindChatCommand("/glow", {}, "cl_onChatCommand", "Enable player\'s character glowing")
+		sm.game.bindChatCommand("/unglow", {}, "cl_onChatCommand", "Disable player\'s character glowing")
+		--Romytrix Commands
+
 		sm.game.bindChatCommand("/ambush", { { "number", "magnitude", true }, { "int", "wave", true } },
 			"cl_onChatCommand", "Starts a 'random' encounter")
 		sm.game.bindChatCommand("/recreate", {}, "cl_onChatCommand", "Recreate world")
@@ -476,6 +490,16 @@ function SurvivalGame.cl_onChatCommand(self, params)
 		self.network:sendToServer("sv_setLimitedInventory", false)
 	elseif params[1] == "/limited" then
 		self.network:sendToServer("sv_setLimitedInventory", true)
+
+	--Romytrix Commands
+	elseif params[1] == "/unglow" then
+		self.network:sendToServer("sv_setGlowing",
+			{ player = sm.localPlayer.getPlayer(), state = false})
+	elseif params[1] == "/glow" then
+		self.network:sendToServer("sv_setGlowing",
+			{ player = sm.localPlayer.getPlayer(), state = true})
+	--Romytrix Commands
+
 	elseif params[1] == "/ambush" then
 		self.network:sendToServer("sv_ambush", { magnitude = params[2] or 1, wave = params[3] })
 	elseif params[1] == "/tp" then
@@ -645,6 +669,25 @@ end
 function SurvivalGame.sv_setLimitedInventory(self, state)
 	sm.game.setLimitedInventory(state)
 	self.network:sendToClients("client_showMessage", (state and "Limited inventory" or "Unlimited inventory"))
+end
+
+
+function SurvivalGame.sv_setGlowing(self, param)
+	self.network:sendToClients("cl_setGlowing", {state = param.state, player = param.player})
+	self.network:sendToClients("client_showMessage", (param.state and tostring(param.player.name) .. " start glowing" or tostring(param.player.name) .. " stoped glowing"))
+end
+
+function SurvivalGame.cl_setGlowing(self, param)
+	local idx = tostring(param.player.id)
+	if param.state then
+		self.cl.glowEffect[idx] = sm.effect.createEffect("ShackLight", param.player.character)
+		self.cl.glowEffect[idx]:setOffsetPosition(sm.vec3.new(0, 1.2, 0))
+		self.cl.glowEffect[idx]:setParameter("radius", 64)
+		self.cl.glowEffect[idx]:setParameter("maxIntensity", 5)
+		self.cl.glowEffect[idx]:start()
+	else
+		self.cl.glowEffect[idx]:destroy()
+	end
 end
 
 function SurvivalGame.sv_ambush(self, params)
