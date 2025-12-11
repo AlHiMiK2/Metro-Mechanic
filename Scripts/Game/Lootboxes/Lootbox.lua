@@ -6,8 +6,15 @@ function Lootbox.server_onCreate( self )
 	self.destroyed = false
 end
 
+function Lootbox.client_canInteract(self, character)
+	if self.data.Open_Action ~= "Use" and self.data.Open_Action ~= "Both" then
+		return false, false
+	end
+	return true, true
+end
+
 function Lootbox.client_onInteract( self, character, state )
-	if self.data.Open_Action == "Use" and self.data.Open_Type == "Both" then
+	if self.data.Open_Action == "Use" or self.data.Open_Action == "Both" then
 		if character:isPlayer() then
 			if state == true then
 				self.network:sendToServer("sv_use", {character = character})
@@ -49,7 +56,7 @@ function Lootbox.sv_hit(self, param)
 		self.destroyed = true
 
 		local lootList = {}
-		for _, item in ipairs(loot_table[self.data.Lootbox_Type]) do
+		for i, item in ipairs(loot_table[self.data.Lootbox_Type]) do
 			if item.uuid ~= nil then
 				local amount = math.random(item.min, item.max)
 				if amount > 0 then
@@ -72,20 +79,20 @@ end
 
 
 
-function WheatPlant.server_onProjectile( self, hitPos, hitTime, hitVelocity, _, attacker, damage, userData, hitNormal, projectileUuid )
-	if self.data.Open_Action == "Hit" and self.data.Open_Type == "Both" then
+function Lootbox.server_onProjectile( self, hitPos, hitTime, hitVelocity, _, attacker, damage, userData, hitNormal, projectileUuid )
+	if self.data.Open_Action == "Hit" or self.data.Open_Action == "Both" then
 		self:sv_hit()
 	end
 end
 
-function WheatPlant.server_onMelee( self, hitPos, attacker, damage, power, hitDirection )
-	if self.data.Open_Action == "Hit" and self.data.Open_Type == "Both" then
+function Lootbox.server_onMelee( self, hitPos, attacker, damage, power, hitDirection )
+	if self.data.Open_Action == "Hit" or self.data.Open_Action == "Both" then
 		self:sv_hit()
 	end
 end
 
-function WheatPlant.server_onExplosion( self, center, destructionLevel )
-	if self.data.Open_Action == "Hit" and self.data.Open_Type == "Both" then
+function Lootbox.server_onExplosion( self, center, destructionLevel )
+	if self.data.Open_Action == "Hit" or self.data.Open_Action == "Both" then
 		self:sv_hit()
 	end
 end

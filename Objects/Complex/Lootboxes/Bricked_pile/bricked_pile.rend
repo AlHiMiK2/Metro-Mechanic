@@ -1,0 +1,25 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Bricked_pile/Bricked_pile.fbx",
+         "subMeshMap" : {
+            "brick" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Complex/Lootboxes/Bricked_pile/obj_construction_brick_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_brick_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/construction/obj_construction_brick_nor.tga"
+               ]
+            },
+            "hay_mat" : {
+               "material" : "Leaves",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Complex/Lootboxes/Bricked_pile/hvs_fillers_haypile_dif.tga",
+                  "$SURVIVAL_DATA/Harvestables/Textures/Fillers/hvs_fillers_haypile_asg.tga",
+                  "$SURVIVAL_DATA/Harvestables/Textures/Fillers/hvs_fillers_haypile_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

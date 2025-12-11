@@ -4,7 +4,7 @@ loot_table = {
         effects = {"Loot - Pickup"},
         {uuid = sm.uuid.new("3c5c8d8c-d3c2-4952-a059-fbc9a641f2ac"), min = 1, max = 1}, --drilltool
     },
-    
+
 	["Toolbox_Standart"] = {
         effects = {"Mechanic land", "Mechanic jump", "Drill - Debris"},
         {uuid = sm.uuid.new("c5e56da5-bc3f-4519-91c2-b307d36e15aa"), min = 1, max = 5}, --screw1
@@ -30,12 +30,26 @@ loot_table = {
     },
     --Only Hitables
 	["Hitables_Example"] = {
-        effects = {"Haybot - Destroyed", "ToteBot - DestroyedParts"},
-        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 10, max = 50} -- scrap metal
+        effects = {"Haybot - Destroyed", "ToteBot - DestroyedParts", "Haybot - Destroyed", "ToteBot - DestroyedParts", "Haybot - Destroyed", "ToteBot - DestroyedParts", "Haybot - Destroyed", "ToteBot - DestroyedParts", "Haybot - Destroyed", "ToteBot - DestroyedParts"},
+        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 2, max = 10}, -- scrap metal
+        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 2, max = 10}, -- scrap metal
+        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 2, max = 10}, -- scrap metal
+        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 2, max = 10}, -- scrap metal
+        {uuid = sm.uuid.new("1f7ac0bb-ad45-4246-9817-59bdf7f7ab39"), min = 2, max = 10} -- scrap metal
     },
     --Both
 	["Both_Example"] = { 
-        effects = {"Stone - BreakChunk small", "Haypile - Destruction"},
-        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = 5, max = 8} -- bricks
+        effects = {"Haypile - Destruction"},
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = 1, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = 1, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1}, -- bricks
+        {uuid = sm.uuid.new("1b927252-ee6d-420e-8bb4-ae42fcb43ba8"), min = -2, max = 1} -- bricks
     }
 }

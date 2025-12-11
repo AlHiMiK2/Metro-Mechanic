@@ -1,0 +1,33 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Scraphill/Scraphill.fbx",
+         "subMeshMap" : {
+            "hay" : {
+	                "material": "DifAsgNorAlpha",
+	                "textureList": [
+						"$SURVIVAL_DATA/Objects/Textures/decor/obj_decor_haybale_dif.tga",
+						"$SURVIVAL_DATA/Objects/Textures/decor/obj_decor_haybale_asg.tga",
+						"$SURVIVAL_DATA/Objects/Textures/decor/obj_decor_haybale_nor.tga"
+               ]
+            },
+            "haybot" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Character/Char_Haybot/char_haybot_dif.tga",
+                  "$SURVIVAL_DATA/Character/Char_Haybot/char_haybot_asg.tga",
+                  "$SURVIVAL_DATA/Character/Char_Haybot/char_haybot_nor.tga"
+               ]
+            },
+            "totebot" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Character/Char_Totebot/char_totebot_dif.tga",
+                  "$SURVIVAL_DATA/Character/Char_Totebot/char_totebot_asg.tga",
+                  "$SURVIVAL_DATA/Character/Char_Totebot/char_totebot_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

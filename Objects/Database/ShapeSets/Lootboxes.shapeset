@@ -1,6 +1,98 @@
 {
    "partList" : [
       {
+         "color" : "815406",
+         "hull" : {
+            "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/DrillTool/DrillTool.obj",
+            "x" : 2,
+            "y" : 3,
+            "z" : 5
+         },
+         "name" : "dbg_usable_example",
+         "physicsMaterial" : "Metal",
+         "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/DrillTool/DrillTool.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : false,
+            "destructable" : false,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : false,
+            "usable" : true
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Lootbox",
+            "data" : {
+               "Lootbox_Type" : "Usables_Example",
+               "Open_Action" : "Use"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
+         },
+         "uuid" : "dbc6e5a9-b142-4535-92b5-b9ab41713e28"
+      },
+      {
+         "color" : "555555",
+         "hull" : {
+            "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Scraphill/Scraphill_col.obj",
+            "x" : 20,
+            "y" : 10,
+            "z" : 20
+         },
+         "name" : "dbg_hitable_example",
+         "physicsMaterial" : "Metal",
+         "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Scraphill/scraphill.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : false,
+            "destructable" : false,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : false,
+            "usable" : true
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Lootbox",
+            "data" : {
+               "Lootbox_Type" : "Hitables_Example",
+               "Open_Action" : "Hit"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
+         },
+         "uuid" : "7c4589a1-7d65-4628-9060-ee97ecb46f92"
+      },
+      {
+         "name" : "dbg_both_example",
+         "physicsMaterial" : "Metal",
+         "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Bricked_pile/bricked_pile.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : false,
+            "destructable" : false,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : false,
+            "usable" : true
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Lootbox",
+            "data" : {
+               "Lootbox_Type" : "Both_Example",
+               "Open_Action" : "Both"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
+         },
+         "sphere" : {
+            "diameter" : 8
+         },
+         "uuid" : "3011babc-3094-4f99-abf5-d469fa963223"
+      },
+      {
          "hull" : {
             "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/Toolkit_col.obj",
             "margin" : 0.0050,
@@ -8,8 +100,8 @@
             "y" : 2,
             "z" : 1
          },
-         "name" : "dbg_toolbox",
-         "physicsMaterial" : "Default",
+         "name" : "lbx_toolbox",
+         "physicsMaterial" : "Plastic",
          "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/toolkit.rend",
          "restrictions" : {
             "buildable" : false,
@@ -25,7 +117,8 @@
          "scripted" : {
             "classname" : "Lootbox",
             "data" : {
-               "Lootbox_Type" : "Toolbox_Standart"
+               "Lootbox_Type" : "Toolbox_Standart",
+               "Open_Action" : "Use"
             },
             "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
          },
@@ -40,8 +133,8 @@
             "y" : 2,
             "z" : 1
          },
-         "name" : "dbg_toolbox_tower",
-         "physicsMaterial" : "Default",
+         "name" : "lbx_toolbox_tower",
+         "physicsMaterial" : "Plastic",
          "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/toolkit.rend",
          "restrictions" : {
             "buildable" : false,
@@ -57,7 +150,8 @@
          "scripted" : {
             "classname" : "Lootbox",
             "data" : {
-               "Lootbox_Type" : "Toolbox_Depo_Tower"
+               "Lootbox_Type" : "Toolbox_Depo_Tower",
+               "Open_Action" : "Use"
             },
             "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
          },
