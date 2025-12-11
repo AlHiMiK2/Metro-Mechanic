@@ -155,8 +155,14 @@
             <Index name="ed7dd70d-4848-4700-9a9b-77b4966dedd2">
                 <Frame point="864 384"/>
             </Index>
-            <Index name="3c5c8d8c-d3c2-4952-a059-fbc9a641f2ac">
+            <Index name="c3e5e472-2a1a-4570-a4dc-aa34c18cec9a">
                 <Frame point="0 480"/>
+            </Index>
+            <Index name="ab527c7f-88bd-4bf0-ada2-604c2a077bea">
+                <Frame point="96 480"/>
+            </Index>
+            <Index name="3c5c8d8c-d3c2-4952-a059-fbc9a641f2ac">
+                <Frame point="192 480"/>
             </Index>
         </Group>
     </Resource>

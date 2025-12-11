@@ -1,0 +1,68 @@
+{
+   "partList" : [
+      {
+         "hull" : {
+            "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/Toolkit_col.obj",
+            "margin" : 0.0050,
+            "x" : 2,
+            "y" : 2,
+            "z" : 1
+         },
+         "name" : "dbg_toolbox",
+         "physicsMaterial" : "Default",
+         "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/toolkit.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : true,
+            "destructable" : true,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : false,
+            "usable" : true
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Lootbox",
+            "data" : {
+               "Lootbox_Type" : "Toolbox_Standart"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
+         },
+         "stackSize" : 256,
+         "uuid" : "c3e5e472-2a1a-4570-a4dc-aa34c18cec9a"
+      },
+      {
+         "hull" : {
+            "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/Toolkit_col.obj",
+            "margin" : 0.0050,
+            "x" : 2,
+            "y" : 2,
+            "z" : 1
+         },
+         "name" : "dbg_toolbox_tower",
+         "physicsMaterial" : "Default",
+         "renderable" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/toolkit.rend",
+         "restrictions" : {
+            "buildable" : false,
+            "connectable" : false,
+            "convertibleToDynamic" : true,
+            "destructable" : true,
+            "erasable" : false,
+            "liftable" : false,
+            "paintable" : false,
+            "usable" : true
+         },
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "Lootbox",
+            "data" : {
+               "Lootbox_Type" : "Toolbox_Depo_Tower"
+            },
+            "filename" : "$CONTENT_DATA/Scripts/Game/Lootboxes/Lootbox.lua"
+         },
+         "stackSize" : 256,
+         "uuid" : "ab527c7f-88bd-4bf0-ada2-604c2a077bea"
+      }
+   ]
+}

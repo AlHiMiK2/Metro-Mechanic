@@ -71,6 +71,10 @@ function SurvivalGame.server_onCreate(self)
 		self.network:sendToClients("client_showMessage", (state and "Limited inventory" or "Unlimited inventory"))
 		--unlimited
 
+		--decrypt
+			sm.game.setEnableRestrictions(false)
+		--decrypt
+
 		g_survivalDev = true
 		sm.log.info("Starting SurvivalGame in DEV mode")
 	end

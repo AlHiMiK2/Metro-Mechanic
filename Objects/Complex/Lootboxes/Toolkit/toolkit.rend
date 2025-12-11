@@ -1,0 +1,41 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/Toolkit.fbx",
+         "subMeshMap" : {
+            "crowbar" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$GAME_DATA/Character/Char_Tools/Char_crowbar/char_crowbar_dif.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_crowbar/char_crowbar_asg.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_crowbar/char_crowbar_nor.tga"
+               ]
+            },
+            "hammer" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$GAME_DATA/Character/Char_Tools/Char_smallhammer/char_smallhammer_dif.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_smallhammer/char_smallhammer_asg.tga",
+                  "$GAME_DATA/Character/Char_Tools/Char_smallhammer/char_smallhammer_nor.tga"
+               ]
+            },
+            "toolkit" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$CONTENT_DATA/Objects/Complex/Lootboxes/Toolkit/outfit_automotive_backpack_dif.tga",
+                  "$SURVIVAL_DATA/Character/Char_Male/Outfit/Backpack/Outfit_automotive_backpack/outfit_automotive_backpack_asg.tga",
+                  "$SURVIVAL_DATA/Character/Char_Male/Outfit/Backpack/Outfit_automotive_backpack/outfit_automotive_backpack_nor.tga"
+               ]
+            },
+            "workbench" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Character/Char_Workbench/char_workbench_dif.tga",
+                  "$SURVIVAL_DATA/Character/Char_Workbench/char_workbench_asg.tga",
+                  "$SURVIVAL_DATA/Character/Char_Workbench/char_workbench_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}
