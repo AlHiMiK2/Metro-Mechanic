@@ -37,7 +37,7 @@
          "hull" : {
             "col" : "$CONTENT_DATA/Objects/Complex/Lootboxes/Scraphill/Scraphill_col.obj",
             "x" : 20,
-            "y" : 10,
+            "y" : 5,
             "z" : 20
          },
          "name" : "dbg_hitable_example",
