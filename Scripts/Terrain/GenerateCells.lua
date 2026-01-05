@@ -143,7 +143,7 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
                 placeRoadTurn(true, currentOffset, y)
                 currentOffset = 0
             elseif currentOffset == 0 then
-                if math.random(0, 1) == 0 then
+                if y * seed % 2 == 0 then
                     placeRoadTurn(true, currentOffset, y)
                     currentOffset = 1
                 else
