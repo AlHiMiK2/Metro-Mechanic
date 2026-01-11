@@ -95,6 +95,9 @@ function SurvivalPlayer.client_onCreate( self )
 		if g_survivalHud then
 			g_survivalHud:open()
 		end
+		if g_customHud then
+			g_customHud:open()
+		end
 
 		self.cl.hungryEffect = sm.effect.createEffect( "Mechanic - StatusHungry" )
 		self.cl.thirstyEffect = sm.effect.createEffect( "Mechanic - StatusThirsty" )
@@ -121,6 +124,15 @@ function SurvivalPlayer.cl_init( self )
 	self.currentCutscene = {}
 
 	self.cl.revivalChewCount = 0
+end
+
+function SurvivalPlayer:client_onUpdate(dt)
+	BasePlayer.client_onUpdate(self, dt)
+
+	local character = self.player:getCharacter()
+	if g_customHud and character then
+		g_customHud:setText("distance_count", string.format("%.2f km", math.max(0, character.worldPosition.y / 1000)))
+	end
 end
 
 function SurvivalPlayer.client_onClientDataUpdate( self, data )

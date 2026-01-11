@@ -27,32 +27,18 @@ function initCustomTiles()
 		chance = 5 ---100%(max)
 	}
 
-  	g_roads_r_in = { 
+  	g_roads_r = { 
 		tiles = { 
-			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/MetroRIn.tile" ), 
+			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/MetroCurveR.tile" ), 
 		},
-		rotation = 3
+		rotation = 0
 	}
 
-	g_roads_r_out = { 
+	g_roads_l = { 
 		tiles = { 
-			AddTile( 1128003, "$CONTENT_DATA/Terrain/Tiles/MetroROut.tile" ), 
+			AddTile( 1128004, "$CONTENT_DATA/Terrain/Tiles/MetroCurveL.tile" ), 
 		},
-		rotation = 3
-	}
-
-	g_roads_l_in = { 
-		tiles = { 
-			AddTile( 1128004, "$CONTENT_DATA/Terrain/Tiles/MetroLIn.tile" ), 
-		},
-		rotation = 3
-	}
-
-	g_roads_l_out = { 
-		tiles = { 
-			AddTile( 1128005, "$CONTENT_DATA/Terrain/Tiles/MetroLOut.tile" ), 
-		},
-		rotation = 3
+		rotation = 0
 	}
 
   	g_road_ends = { 
@@ -87,8 +73,6 @@ function initCustomTiles()
 		AddTile( 1222500, "$CONTENT_DATA/Terrain/Tiles/Start Depo.tile" )
 	}
 	
-	-- Commented tiles are desert-ified kiosk tiles from survival
-	-- Flippable lets the tile be on the other side of the road, rotates by 180 as well
 	g_road_pois = {
 		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/Drisnya/RadioStation01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 	}
@@ -128,8 +112,8 @@ function getRoadTileIdAndRotation( variationNoise )
 	return tiles[variationNoise % tileCount + 1], rotation
 end
 
-function getRoadRInTileIdAndRotation( variationNoise )
-	local tiles = g_roads_r_in.tiles
+function getRoadRTileIdAndRotation( variationNoise )
+	local tiles = g_roads_r.tiles
 
 	local tileCount = #tiles
 
@@ -137,13 +121,13 @@ function getRoadRInTileIdAndRotation( variationNoise )
 		return ERROR_TILE_UUID, 0
 	end
 
-	local rotation = g_roads_r_in.rotation
+	local rotation = g_roads_r.rotation
 
 	return tiles[variationNoise % tileCount + 1], rotation
 end
 
-function getRoadROutTileIdAndRotation( variationNoise )
-	local tiles = g_roads_r_out.tiles
+function getRoadLTileIdAndRotation( variationNoise )
+	local tiles = g_roads_l.tiles
 
 	local tileCount = #tiles
 
@@ -151,35 +135,7 @@ function getRoadROutTileIdAndRotation( variationNoise )
 		return ERROR_TILE_UUID, 0
 	end
 
-	local rotation = g_roads_r_out.rotation
-
-	return tiles[variationNoise % tileCount + 1], rotation
-end
-
-function getRoadLInTileIdAndRotation( variationNoise )
-	local tiles = g_roads_l_in.tiles
-
-	local tileCount = #tiles
-
-	if tileCount == 0 then
-		return ERROR_TILE_UUID, 0
-	end
-
-	local rotation = g_roads_l_in.rotation
-
-	return tiles[variationNoise % tileCount + 1], rotation
-end
-
-function getRoadLOutTileIdAndRotation( variationNoise )
-	local tiles = g_roads_l_out.tiles
-
-	local tileCount = #tiles
-
-	if tileCount == 0 then
-		return ERROR_TILE_UUID, 0
-	end
-
-	local rotation = g_roads_l_out.rotation
+	local rotation = g_roads_l.rotation
 
 	return tiles[variationNoise % tileCount + 1], rotation
 end

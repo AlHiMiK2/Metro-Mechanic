@@ -1,0 +1,21 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/Pipe.fbx",
+         "minViewSize" : 800,
+         "subMeshList" : [
+            {
+               "custom" : {
+                  "color" : "Pipe"
+               },
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_concretetiles_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_concretetiles_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/Blocks/blk_concretetiles_nor.tga"
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="HotbarItemKeybindingBackground" position_real="0.84114583333333337 0.023148148148148147 0.140625 0.037037037037037035" name="distance">
+        <Property key="Visible" value="true"/>
+        <Property key="Enabled" value="true"/>
+        <Widget type="TextBox" skin="TextBox" position_real="0.037037037037037035 0 0.92592592592592593 1" name="distance_count">
+            <Property key="Caption" value="0.0 km"/>
+            <Property key="TextAlign" value="Right VCenter"/>
+            <Property key="FontName" value="SM_HeaderLarge_Medium"/>
+            <Property key="Visible" value="true"/>
+            <Property key="Enabled" value="true"/>
+        </Widget>
+    </Widget>
+    <CodeGeneratorSettings/>
+</MyGUI>

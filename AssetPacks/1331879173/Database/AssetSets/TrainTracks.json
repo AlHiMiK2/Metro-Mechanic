@@ -91,6 +91,96 @@
          "uuid" : "e3dfef33-2656-411a-8563-ce197fe984cd"
       },
       {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailLineCurve_col.obj",
+         "defaultColors" : {
+            "Concrete" : "959595",
+            "Rail" : "685e54"
+         },
+         "name" : "Rail Line Curve",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "maxViewDistance" : 4500,
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailLineCurve.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Rail"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "727e7c4c-c091-4627-a125-afab1a830a31"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailLineCurveL_col.obj",
+         "defaultColors" : {
+            "Concrete" : "959595",
+            "Rail" : "685e54"
+         },
+         "name" : "Rail Line Curve L",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : {
+            "lodList" : [
+               {
+                  "maxViewDistance" : 4500,
+                  "mesh" : "$CONTENT_DATA/AssetPacks/1331879173/Mesh/TrainTracks/RailLineCurveL.fbx",
+                  "subMeshList" : [
+                     {
+                        "custom" : {
+                           "color" : "Concrete"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_dif.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/UniTex_asg.png",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/nonor_nor.png"
+                        ]
+                     },
+                     {
+                        "custom" : {
+                           "color" : "Rail"
+                        },
+                        "material" : "DifAsgNor",
+                        "textureList" : [
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_dif.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_asg.tga",
+                           "$CONTENT_DATA/AssetPacks/1331879173/Textures/blk_concrete01_nor.tga"
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         "uuid" : "b48f80da-85fa-490e-9b12-69eaff022cc0"
+      },
+      {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/RailCurveH90_col.obj",
          "defaultColors" : {
             "Concrete" : "959595",

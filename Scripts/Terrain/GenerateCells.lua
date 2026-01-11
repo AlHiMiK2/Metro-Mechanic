@@ -48,27 +48,23 @@ local function placeRoadTurn(isRight, x, y)
     local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
 
     if isRight then
-        local inTileId, inRotation = getRoadRInTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
-        local outTileId, outRotation = getRoadROutTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+        local rTileId, rRotation = getRoadRTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
 
-        writePoi(inTileId, x, y + 1, 1, inRotation)
-        writePoi(outTileId, x + 1, y + 1, 1, outRotation)
-        writePoi(tileId, x, y, 1, inRotation)
-
-        writePoi(inTileId, x + 1, y, 1, inRotation)
-        writePoi(outTileId, x + 2, y, 1, outRotation)
-        writePoi(tileId, x + 2, y + 1, 1, inRotation)
+        writePoi(rTileId, x, y + 2, 2, rRotation)
+        writePoi(rTileId, x + 1, y, 2, rRotation)
+        writePoi(tileId, x, y, 1, rotation)
+        writePoi(tileId, x, y + 1, 1, rotation)
+        writePoi(tileId, x + 2, y + 2, 1, rotation)
+        writePoi(tileId, x + 2, y + 3, 1, rotation)
     else
-        local inTileId, inRotation = getRoadLInTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
-        local outTileId, outRotation = getRoadLOutTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
+        local lTileId, lRotation = getRoadLTileIdAndRotation(sm.noise.intNoise2d( 0, y, g_cellData.seed + 2854 ))
 
-        writePoi(inTileId, x, y, 1, inRotation)
-        writePoi(outTileId, x - 1, y, 1, outRotation)
-        writePoi(tileId, x - 1, y + 1, 1, inRotation)
-
-        writePoi(inTileId, x + 1, y + 1, 1, inRotation)
-        writePoi(outTileId, x, y + 1, 1, outRotation)
-        writePoi(tileId, x + 1, y, 1, inRotation)
+        writePoi(lTileId, x, y + 2, 2, lRotation)
+        writePoi(lTileId, x - 1, y, 2, lRotation)
+        writePoi(tileId, x + 1, y, 1, rotation)
+        writePoi(tileId, x + 1, y + 1, 1, rotation)
+        writePoi(tileId, x - 1, y + 2, 1, rotation)
+        writePoi(tileId, x - 1, y + 3, 1, rotation)
     end
 end
 
@@ -134,7 +130,7 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
     end
 
     local currentOffset = 0
-    local nextTurnY = 40
+    local nextTurnY = 20
 
     local y = start
     while y <= yMax - padding - 2 do
@@ -154,8 +150,8 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
                 placeRoadTurn(false, currentOffset, y)
                 currentOffset = 0
             end
-            y = y + 1
-            nextTurnY = nextTurnY + math.random(30, 65)
+            y = y + 3
+            nextTurnY = nextTurnY + y * seed % 35 + 10
         else
             local tileId, rotation = getRoadTileIdAndRotation(sm.noise.intNoise2d( 0, y + offset, g_cellData.seed + 2854 ))
             

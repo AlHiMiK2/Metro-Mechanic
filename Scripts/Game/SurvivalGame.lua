@@ -229,7 +229,9 @@ function SurvivalGame.client_onCreate(self)
 
 	-- Survival HUD
 	g_survivalHud = sm.gui.createSurvivalHudGui()
+	g_customHud = sm.gui.createGuiFromLayout("$CONTENT_DATA/Gui/Layouts/CustomHud.layout", false, {isHud = true, isInteractive = false, needsCursor = false})
 	assert(g_survivalHud)
+	assert(g_customHud)
 end
 
 function SurvivalGame.bindChatCommands(self)

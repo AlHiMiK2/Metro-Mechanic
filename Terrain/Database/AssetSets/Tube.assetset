@@ -2,9 +2,9 @@
    "assetListRenderable" : [
       {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/env_ruin_tube_07_col.obj",
-            "defaultColors": {
-                "metal": "344727ff"
-            },
+         "defaultColors" : {
+            "metal" : "344727ff"
+         },
          "name" : "env_ruin_tube_07",
          "physics" : {
             "mass" : 10000.0,
@@ -12,6 +12,45 @@
          },
          "renderable" : "$CONTENT_DATA/Terrain/Renderables/env_ruin_tube_07.rend",
          "uuid" : "e47d459d-ab80-45b8-852e-0387223d50ea"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TubeCurveRCol.obj",
+         "defaultColors" : {
+            "metal" : "344727ff"
+         },
+         "name" : "TubeCurveR",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/TubeCurveR.rend",
+         "uuid" : "2526212a-84b0-4b10-99fc-41b0baebbab6"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TubeCurveLCol.obj",
+         "defaultColors" : {
+            "metal" : "344727ff"
+         },
+         "name" : "TubeCurveL",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/TubeCurveL.rend",
+         "uuid" : "d2bb5ce0-43e9-4dd5-a33c-000a9136b880"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TubeLineCol.obj",
+         "defaultColors" : {
+            "metal" : "344727ff"
+         },
+         "name" : "TubeLine",
+         "physics" : {
+            "mass" : 10000.0,
+            "material" : "Metal"
+         },
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/TubeLine.rend",
+         "uuid" : "e992baed-6278-4a2e-8c04-3886530ab978"
       },
       {
          "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/TrainTracks/PipeTurn_col.obj",
@@ -46,6 +85,32 @@
             ]
          },
          "uuid" : "69c02da1-172e-4e25-9e7e-5983a0022f3c"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/PipeCurveRCol.obj",
+         "defaultColors" : {
+            "Pipe" : "262626"
+         },
+         "name" : "BigPipeCurveRTurn",
+         "physics" : {
+            "mass" : 20000.0,
+            "material" : "Metal"
+         },
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/PipeCurveR.rend",
+         "uuid" : "5cb5eb0a-444e-462e-a0fb-b60f1c37d51a"
+      },
+      {
+         "col" : "$CONTENT_DATA/AssetPacks/1331879173/Collision/PipeCurveLCol.obj",
+         "defaultColors" : {
+            "Pipe" : "262626"
+         },
+         "name" : "BigPipeCurveLTurn",
+         "physics" : {
+            "mass" : 20000.0,
+            "material" : "Metal"
+         },
+         "renderable" : "$CONTENT_DATA/Terrain/Renderables/PipeCurveL.rend",
+         "uuid" : "1d4a5743-cbf1-4a7b-a9d5-7dce5a64a692"
       }
    ]
 }
