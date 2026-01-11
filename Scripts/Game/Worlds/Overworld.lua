@@ -16,7 +16,7 @@ Overworld.enableNodes = true
 Overworld.enableCreations = true
 Overworld.enableHarvestables = true
 Overworld.enableKinematics = true
-Overworld.renderMode = "outdoor"
+Overworld.renderMode = "warehouse"
 
 Overworld.cellMinX = CELL_MIN_X
 Overworld.cellMaxX = CELL_MAX_X

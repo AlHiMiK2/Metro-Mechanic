@@ -1,0 +1,17 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Tools/Mesh/Flashlight_tool.dae",
+         "subMeshMap" : {
+            "lambert1" : {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruinlamp_dif.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruinlamp_asg.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Ruin/env_ruinlamp_nor.tga"
+               ]
+            }
+         }
+      }
+   ]
+}

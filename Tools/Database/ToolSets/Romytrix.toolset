@@ -1,0 +1,14 @@
+{
+   "toolList" : [
+      {
+         "name" : "Flashlight",
+         "previewRenderable" : "$CONTENT_DATA/Tools/Mesh/flashlight.rend",
+         "script" : {
+            "class" : "Flashlight",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/Game/Tools/Flashlight.lua"
+         },
+         "uuid" : "7c89bf53-8a8d-4ac8-9113-a88f87330a24"
+      }
+   ]
+}

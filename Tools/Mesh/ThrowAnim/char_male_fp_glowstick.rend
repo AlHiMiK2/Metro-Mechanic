@@ -1,0 +1,26 @@
+{
+   "lodList" : [
+      {
+         "animationList" : [
+            {
+               "file" : "$CONTENT_DATA/Tools/Mesh/ThrowAnim/Firstperson/Glowstick/ani_char_male_fp_glowstick_idle.dae",
+               "looping" : true,
+               "name" : "glowstick_idle"
+            },
+            {
+               "file" : "$CONTENT_DATA/Tools/Mesh/ThrowAnim/Firstperson/Glowstick/ani_char_male_fp_glowstick_pickup.dae",
+               "name" : "glowstick_pickup"
+            },
+            {
+               "file" : "$CONTENT_DATA/Tools/Mesh/ThrowAnim/Firstperson/Glowstick/ani_char_male_fp_glowstick_putdown.dae",
+               "name" : "glowstick_putdown"
+            },
+            {
+               "file" : "$CONTENT_DATA/Tools/Mesh/ThrowAnim/Firstperson/Glowstick/ani_char_male_fp_glowstick_use.dae",
+               "name" : "glowstick_use"
+            }
+         ],
+         "maxViewDistance" : 1000.0
+      }
+   ]
+}
