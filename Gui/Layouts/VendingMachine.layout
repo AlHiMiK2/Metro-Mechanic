@@ -1,0 +1,209 @@
+<MyGUI type="Layout" version="3.2.0">
+	<Widget type="Widget" skin="HudBackgroundLarge" position_real="0.3020833333333333 0.08333333333333333 0.3932291666666667 0.7037037037037037">
+		<Widget type="Widget" skin="PickupBgParts" name="Product1" position_real="0.07947019867549669 0.07894736842105263 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo1" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy1" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count1" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency1" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price1" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+		<Widget type="Widget" skin="PickupBgParts" name="Product2" position_real="0.07947019867549669 0.2236842105263158 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo2" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy2" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count2" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency2" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price2" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+		<Widget type="Widget" skin="PickupBgParts" name="Product3" position_real="0.07947019867549669 0.3684210526315789 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo3" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy3" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count3" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency3" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price3" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+		<Widget type="Widget" skin="PickupBgParts" name="Product4" position_real="0.07947019867549669 0.5131578947368421 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo4" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy4" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count4" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency4" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price4" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+		<Widget type="Widget" skin="PickupBgParts" name="Product5" position_real="0.07947019867549669 0.6578947368421053 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo5" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy5" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count5" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency5" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price5" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+		<Widget type="Widget" skin="PickupBgParts" name="Product6" position_real="0.07947019867549669 0.8026315789473685 0.8410596026490066 0.11842105263157894">
+			<Property key="Colour" value="#FFFFFF" />
+			<Widget type="ImageBox" skin="ImageBox" name="Logo6" position_real="0.015748031496062992 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="80bc2b9f-98a9-44e4-9cb8-d4ec7e95b40f" />
+			</Widget>
+			<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbot" position_real="0.6771653543307087 0.05555555555555555 0.31496062992125984 0.8888888888888888">
+				<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+				<Property key="Caption" value="BUY" />
+				<Property key="TextAlign" value="Center" />
+				<Property key="TextColour" value="#E6E6E6" />
+				<Widget type="Button" align="Right VCenter" skin="StyledButtonDressbotUnbox" name="Buy6" position_real="0 0 1 1">
+					<Property key="FontName" value="SM_HeaderLarge_Narrow" />
+					<Property key="Caption" value="BUY" />
+					<Property key="TextAlign" value="Center" />
+					<Property key="TextColour" value="#E6E6E6" />
+				</Widget>
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Count6" position_real="0.08661417322834646 0.5555555555555556 0.1968503937007874 0.3888888888888889">
+				<Property key="FontName" value="SM_ItemTitle" />
+				<Property key="TextAlign" value="Left VCenter" />
+				<Property key="Caption" value="10X" />
+			</Widget>
+			<Widget type="ImageBox" skin="ImageBox" name="Currency6" position_real="0.5590551181102362 0.1111111111111111 0.11023622047244094 0.7777777777777778">
+				<Property key="ImageResource" value="ItemIconsSet0" />
+				<Property key="ImageName" value="c5e56da5-bc3f-4519-91c2-b307d36e15aa" />
+				<Property key="ImageGroup" value="ItemIcons" />
+			</Widget>
+			<Widget type="TextBox" skin="SMTextBox_NoBackground" name="Price6" position_real="0.1889763779527559 0.1111111111111111 0.36220472440944884 0.7777777777777778">
+				<Property key="FontName" value="SM_HeaderLarge_Medium" />
+				<Property key="TextAlign" value="Right VCenter" />
+				<Property key="Caption" value="10" />
+			</Widget>
+		</Widget>
+	</Widget>
+</MyGUI>

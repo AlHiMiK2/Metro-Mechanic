@@ -1,18 +1,25 @@
 {
-   "Part - Electricity":
-	{
-		"effectList":
-		[
-			{
-				"type": "particle",
-				"name": "p_parteffects_electricity",
-				"delay": 0.0
-			},
-			{
-				"type": "audio",
-				"name": "event:/amb/3D/electric_spark",
-				"delay": 0.0
-			}
-		]
-	}
+   "Fog" : {
+      "effectList" : [
+         {
+            "delay" : 0.0,
+            "name" : "start_depo_fog",
+            "type" : "particle"
+         }
+      ]
+   },
+   "Part - Electricity" : {
+      "effectList" : [
+         {
+            "delay" : 0.0,
+            "name" : "p_parteffects_electricity",
+            "type" : "particle"
+         },
+         {
+            "delay" : 0.0,
+            "name" : "event:/amb/3D/electric_spark",
+            "type" : "audio"
+         }
+      ]
+   }
 }

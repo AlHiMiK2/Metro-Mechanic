@@ -1,3 +1,3 @@
 {
-   "particleSystemList" : [ "p_parteffects_electricity.json" ]
+   "particleSystemList" : [ "p_parteffects_electricity.json", "start_depo_fog.json" ]
 }

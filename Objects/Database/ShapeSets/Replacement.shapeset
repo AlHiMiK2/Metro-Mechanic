@@ -103,6 +103,31 @@
             "filename" : "$CONTENT_DATA/Scripts/Replacement/vend.lua"
          },
          "uuid" : "5ad298e4-f5ad-479c-9ec6-6c4f9d3fb8ae"
+      },
+      {
+         "color" : "fc949d",
+         "flammable" : true,
+         "hull" : {
+            "col" : "$SURVIVAL_DATA/Objects/Collision/obj_decor_sunshakemachine.obj",
+            "x" : 5,
+            "y" : 8,
+            "z" : 5
+         },
+         "name" : "Vending",
+         "physicsMaterial" : "Metal",
+         "ratings" : {
+            "buoyancy" : 6,
+            "density" : 4,
+            "durability" : 4,
+            "friction" : 4
+         },
+         "renderable" : "$CONTENT_DATA/Objects/Renderables/Replacement/obj_decor_sunshakemachine.rend",
+         "rotationSet" : "PropY",
+         "scripted" : {
+            "classname" : "VendingMachine",
+            "filename" : "$CONTENT_DATA/Scripts/Game/Interactables/VendingMachine.lua"
+         },
+         "uuid" : "15b40c1c-724c-4e9b-8952-78e67822ea9c"
       }
    ]
 }

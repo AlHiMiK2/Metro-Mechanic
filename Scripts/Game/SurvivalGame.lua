@@ -15,6 +15,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/util/Timer.lua")
 dofile("$GAME_DATA/Scripts/game/managers/EventManager.lua")
 dofile("$CONTENT_DATA/Scripts/Game/Managers/PortalManager.lua")
 dofile("$CONTENT_DATA/Scripts/Terrain/Util.lua")
+dofile("$CONTENT_DATA/Scripts/Game/survival_loot.lua")
 
 ---@class SurvivalGame : GameClass
 ---@field sv table
