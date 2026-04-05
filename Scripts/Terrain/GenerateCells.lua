@@ -130,9 +130,9 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
     end
 
     local currentOffset = 0
-    local nextTurnY = 20
 
     local y = start
+    local nextTurnY = 17 + y * seed % 5
     while y <= yMax - padding - 2 do
         if nextTurnY == y then
             if currentOffset == -1 then
